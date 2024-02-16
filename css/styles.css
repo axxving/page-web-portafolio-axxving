@@ -1,0 +1,12 @@
+body{
+    color: black;
+    background-color: blue;
+}
+
+.container-fluid{
+    background-color: aqua;
+}
+
+.container{
+    background-color: blueviolet;
+}
