@@ -43,7 +43,25 @@
     }
 }
 
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.243);
+    /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px);
+    /* Aplica un efecto de desenfoque al fondo */
+    border-radius: 10px;
+    /* Redondea las esquinas de la card */
+    margin: 10px;
 
+    border: 1px solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: transparent;
+}
 
 /*  Estilos del body  */
 /*--------------------*/
@@ -148,22 +166,6 @@ body {
     min-height: 50vh;
 }
 
-.glass-card {
-    background-color: rgba(255, 255, 255, 0.243);
-    /* Color de fondo con transparencia */
-    backdrop-filter: blur(10px);
-    /* Aplica un efecto de desenfoque al fondo */
-    border-radius: 10px;
-    /* Redondea las esquinas de la card */
-    margin: 10px;
-
-    border: 1px solid #fff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .item-carrusel{
     background-color: transparent;
 }
@@ -219,6 +221,16 @@ body {
 /* Testimonios */
 #testimonios{
     min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Blog */
+#blog{
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
