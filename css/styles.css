@@ -1,26 +1,58 @@
 :root {
     --azul: #00328f;
+    --azul-medio: #0b48ba;
     --azul-claro: #3fc3dd;
     --blanco: #ffffff;
 }
 
-/*Estilos del Header*/
-/*------------------*/
+/* Estilos generales */
+* {
+    color: var(--blanco);
+}
+
+.btn-cta {
+    border-radius: 20px;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+
+    &:hover {
+        background-color: var(--azul-medio);
+        color: var(--blanco);
+    }
+
+    &:active {
+        background-color: var(--azul-claro);
+        border: 1px solid #fff;
+    }
+}
+
+/*  Estilos del body  */
+/*--------------------*/
+body {
+    background-color: var(--azul);
+}
+
+/* Estilos del Header */
+/*--------------------*/
 
 #header {
     background-color: var(--azul);
-
+    position: sticky;
+    top: 0;
 }
 
 .nav-link {
     color: var(--blanco);
-    &:hover{
+
+    &:hover {
         color: var(--azul-claro);
     }
-    &:active{
+
+    &:active {
         color: var(--azul-claro);
     }
-    &:focus{
+
+    &:focus {
         color: var(--azul-claro);
     }
 }
@@ -29,7 +61,7 @@
     color: white !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: transparent !important;
 }
 
@@ -37,6 +69,84 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#navbarNav{
+#navbarNav {
     padding-left: 10px;
 }
+
+/* Estilos del Hero */
+/*------------------*/
+
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container-hero {
+        .row-hero {}
+    }
+}
+
+.container-texto-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nombre {
+        font-size: 3rem;
+        color: var(--blanco);
+
+        .apellido {
+            color: var(--azul-claro);
+        }
+    }
+
+}
+
+.container-planeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planeta {
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+/** Media Querys*/
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nombre {
+        font-size: 2rem !important;
+    }
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .nombre {
+        font-size: 3rem !important;
+    }
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
