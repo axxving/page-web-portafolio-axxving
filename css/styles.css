@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -31,13 +30,15 @@
     }
 }
 
-#titulo{
+#titulo {
     min-height: 10vh;
     padding: 15px;
-    .titulo{
+
+    .titulo {
         color: var(--azul-claro);
     }
-    .subtitulo{
+
+    .subtitulo {
         color: var(--blanco);
     }
 }
@@ -143,7 +144,7 @@ body {
 }
 
 /* Cards */
-#cards-one{
+#cards-one {
     min-height: 50vh;
 }
 
@@ -166,14 +167,14 @@ body {
 /* Sobre */
 /*-------*/
 
-#sobre{
+#sobre {
     min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contenedor-texto-sobre{
+.contenedor-texto-sobre {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -182,13 +183,19 @@ body {
 
 
 
-/* Cards two */ 
-.card-title{
+/* Cards two */
+.card-title {
     font-weight: bold;
 }
 
+/* Habilidades */
 
-
+#habilidades {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
