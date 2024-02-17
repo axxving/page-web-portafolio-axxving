@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
     --azul: #00328f;
     --azul-medio: #0b48ba;
@@ -8,6 +12,7 @@
 /* Estilos generales */
 * {
     color: var(--blanco);
+    font-family: "Montserrat", sans-serif;
 }
 
 .btn-cta {
@@ -25,6 +30,19 @@
         border: 1px solid #fff;
     }
 }
+
+#titulo{
+    min-height: 10vh;
+    padding: 15px;
+    .titulo{
+        color: var(--azul-claro);
+    }
+    .subtitulo{
+        color: var(--blanco);
+    }
+}
+
+
 
 /*  Estilos del body  */
 /*--------------------*/
@@ -130,42 +148,45 @@ body {
 }
 
 .glass-card {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.243);
     /* Color de fondo con transparencia */
     backdrop-filter: blur(10px);
     /* Aplica un efecto de desenfoque al fondo */
     border-radius: 10px;
     /* Redondea las esquinas de la card */
     margin: 10px;
+
+    border: 1px solid #fff;
 }
 
-/* Estilo de la barra de desplazamiento */
-::-webkit-scrollbar {
-    width: 10px;
+#sobre{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estilo del indicador (thumb) de la barra de desplazamiento */
-::-webkit-scrollbar-thumb {
-    background-color: var(--azul);
-    border-radius: 5px;
-    border: 2px solid var(--azul);
-
+.contenedor-texto-sobre{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/* Estilo del indicador de desplazamiento al pasar el mouse */
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--azul);
-}
 
-/* Estilo del indicador de desplazamiento al hacer clic */
-::-webkit-scrollbar-thumb:active {
-    background-color: var(--azul);
-}
 
-/* Estilo del indicador de desplazamiento cuando está inactivo */
-::-webkit-scrollbar-thumb:inactive {
-    background-color: var(--azul);
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** Media Querys*/
