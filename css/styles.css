@@ -39,6 +39,7 @@ body {
     background-color: var(--azul);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 #header {
@@ -123,41 +124,48 @@ body {
     border-radius: 50%;
 }
 
+/* Cards */
+#cards-one{
+    min-height: 50vh;
+}
+
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px);
+    /* Aplica un efecto de desenfoque al fondo */
+    border-radius: 10px;
+    /* Redondea las esquinas de la card */
+    margin: 10px;
+}
 
 /* Estilo de la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 10px;
-    /* Ancho de la barra */
 }
 
 /* Estilo del indicador (thumb) de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-    background-color: #00328f;
-    /* Color azul */
+    background-color: var(--azul);
     border-radius: 5px;
-    /* Borde redondeado */
-    border: 2px solid #00328f;
-    /* Borde */
+    border: 2px solid var(--azul);
+
 }
 
 /* Estilo del indicador de desplazamiento al pasar el mouse */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 50, 143, 0.8);
-    /* Color azul con opacidad */
+    background-color: var(--azul);
 }
 
 /* Estilo del indicador de desplazamiento al hacer clic */
 ::-webkit-scrollbar-thumb:active {
-    background-color: rgba(0, 50, 143, 0.6);
-    /* Color azul con opacidad */
+    background-color: var(--azul);
 }
 
 /* Estilo del indicador de desplazamiento cuando está inactivo */
 ::-webkit-scrollbar-thumb:inactive {
-    background-color: rgba(0, 50, 143, 0.4);
-    /* Color azul con opacidad */
+    background-color: var(--azul);
 }
-
 
 
 /** Media Querys*/
