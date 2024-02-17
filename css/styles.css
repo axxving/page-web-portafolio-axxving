@@ -164,6 +164,10 @@ body {
     justify-content: center;
 }
 
+.item-carrusel{
+    background-color: transparent;
+}
+
 /* Sobre */
 /*-------*/
 
@@ -212,7 +216,13 @@ body {
     justify-content: center;
 }
 
-
+/* Testimonios */
+#testimonios{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /** Media Querys*/
 
