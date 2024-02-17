@@ -157,7 +157,14 @@ body {
     margin: 10px;
 
     border: 1px solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Sobre */
+/*-------*/
 
 #sobre{
     min-height: 90vh;
@@ -175,7 +182,10 @@ body {
 
 
 
-
+/* Cards two */ 
+.card-title{
+    font-weight: bold;
+}
 
 
 
