@@ -189,7 +189,6 @@ body {
 }
 
 /* Habilidades */
-
 #habilidades {
     min-height: 50vh;
     display: flex;
@@ -197,9 +196,13 @@ body {
     justify-content: center;
 }
 
-
-
-
+/* Servicios */
+#servicios {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
