@@ -41,6 +41,15 @@ body {
     top: 0;
 }
 
+#header {
+    transition: transform 0.3s ease-in-out;
+}
+
+#header.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 .nav-link {
     color: var(--blanco);
 
@@ -115,6 +124,42 @@ body {
 }
 
 
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra */
+}
+
+/* Estilo del indicador (thumb) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #00328f;
+    /* Color azul */
+    border-radius: 5px;
+    /* Borde redondeado */
+    border: 2px solid #00328f;
+    /* Borde */
+}
+
+/* Estilo del indicador de desplazamiento al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 50, 143, 0.8);
+    /* Color azul con opacidad */
+}
+
+/* Estilo del indicador de desplazamiento al hacer clic */
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 50, 143, 0.6);
+    /* Color azul con opacidad */
+}
+
+/* Estilo del indicador de desplazamiento cuando está inactivo */
+::-webkit-scrollbar-thumb:inactive {
+    background-color: rgba(0, 50, 143, 0.4);
+    /* Color azul con opacidad */
+}
+
+
+
 /** Media Querys*/
 
 /* Extra small devices (phones, less than 576px) */
@@ -122,6 +167,7 @@ body {
     .nombre {
         font-size: 2rem !important;
     }
+
     .planeta {
         margin-top: 50px;
     }
@@ -132,6 +178,7 @@ body {
     .nombre {
         font-size: 3rem !important;
     }
+
     .planeta {
         margin-top: 50px;
     }
@@ -145,8 +192,7 @@ body {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
