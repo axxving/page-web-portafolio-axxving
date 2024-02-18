@@ -27,16 +27,6 @@ sr.reveal('#cards-one .card', {
     interval: 200       // Intervalo entre la animación de cada tarjeta
 });
 
-// Revelar elementos de la sección "Sobre"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
-});
-
 // Revelar elementos de la sección "Mi Bio"
 sr.reveal('#sobre .contenedor-texto-sobre', {
     origin: "left",     // Desde la izquierda
@@ -61,26 +51,6 @@ sr.reveal('#habilidades .progress-bar', {
     interval: 200       // Intervalo entre la animación de cada barra de progreso
 });
 
-// Revelar títulos de secciones
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
-});
-
-// Revelar título de la sección "Servicios"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
-});
-
 // Revelar elementos de la sección "Servicios"
 sr.reveal('#servicios .card', {
     origin: "bottom",   // Desde la parte inferior
@@ -88,29 +58,9 @@ sr.reveal('#servicios .card', {
     interval: 200       // Intervalo entre la animación de cada tarjeta
 });
 
-// Revelar título de la sección "Proyectos"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
-});
-
 // Revelar elementos de la sección "Proyectos"
 sr.reveal('#proyectos .tab-content', {
     origin: "bottom",   // Desde la parte inferior
-    distance: "20px"    // Distancia de revelación
-});
-
-// Revelar título de la sección "Testimonios"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
     distance: "20px"    // Distancia de revelación
 });
 
@@ -121,31 +71,11 @@ sr.reveal('#testimonios', {
     interval: 300       // Intervalo entre cada elemento
 });
 
-// Revelar título de la sección "Blog"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
-});
-
 // Revelar elementos de la sección "Blog"
 sr.reveal('#blog .card', {
     origin: "bottom",   // Desde la parte inferior
     distance: "20px",   // Distancia de revelación
     interval: 200       // Intervalo entre cada elemento
-});
-
-// Revelar título de la sección "Contacto"
-sr.reveal('#titulo', {
-    origin: "left",     // Desde la izquierda
-    distance: "20px"    // Distancia de revelación
-});
-sr.reveal('#titulo .subtitulo', {
-    origin: "right",    // Desde la derecha
-    distance: "20px"    // Distancia de revelación
 });
 
 // Revelar elementos de la sección "Contacto"

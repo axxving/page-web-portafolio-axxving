@@ -10,7 +10,7 @@
 
 /* Estilos generales */
 * {
-    color: var(--blanco);
+    color: #ffffff;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -40,6 +40,7 @@ body{
 
 #titulo {
     min-height: 10vh;
+    background-color: #1A1A1A;
     padding: 10px;
 
     .titulo {
@@ -74,14 +75,15 @@ body{
 /*  Estilos del body  */
 /*--------------------*/
 body {
-    background-color: var(--azul);
+    
 }
 
 /* Estilos del Header */
 /*--------------------*/
 
 #header {
-    background-color: var(--azul);
+    background-color: #d9d9d94b;
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -132,7 +134,10 @@ body {
 /*------------------*/
 
 #hero {
-    min-height: 100vh;
+    background-image: url(/imgs/fondos/1.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +153,9 @@ body {
     justify-content: center;
 
     .nombre {
+        color: #ffffff;
         font-size: 3rem;
+        font-weight: bolder;
         color: var(--blanco);
 
         .apellido {
@@ -171,7 +178,13 @@ body {
 
 /* Cards */
 #cards-one {
-    min-height: 50vh;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imgs/fondos/2.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .item-carrusel {
@@ -182,7 +195,10 @@ body {
 /*-------*/
 
 #sobre {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/3.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +213,10 @@ body {
 
 /* Cards two */
 /*-----------*/
+#cards-two{
+    background-color: #1A1A1A;
+}
+
 .card-title {
     font-weight: bold;
 }
@@ -204,7 +224,10 @@ body {
 /* Habilidades */
 /*-------------*/
 #habilidades {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/3.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,7 +236,10 @@ body {
 /* Servicios */
 /*-----------*/
 #servicios {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/4.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +248,10 @@ body {
 /* Proyectos */
 /*-----------*/
 #proyectos {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/1.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,7 +260,10 @@ body {
 /* Testimonios */
 /*-------------*/
 #testimonios {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/2.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +272,10 @@ body {
 /*    Blog   */
 /*-----------*/
 #blog {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/3.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,7 +288,10 @@ input{
 }
 
 #contacto {
-    min-height: 70vh;
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/4.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,6 +329,7 @@ input{
 /*-----------*/
 #news{
     min-height: 30vh;
+    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,6 +351,7 @@ input{
 /*------------*/
 #footer{
     min-height: 50vh;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
