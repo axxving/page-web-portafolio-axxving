@@ -43,6 +43,13 @@
     }
 }
 
+
+
+.card {
+    background-color: transparent;
+}
+
+
 .glass-card {
     background-color: rgba(255, 255, 255, 0.243);
     /* Color de fondo con transparencia */
@@ -57,10 +64,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.card{
-    background-color: transparent;
 }
 
 /*  Estilos del body  */
@@ -166,7 +169,7 @@ body {
     min-height: 50vh;
 }
 
-.item-carrusel{
+.item-carrusel {
     background-color: transparent;
 }
 
@@ -219,7 +222,7 @@ body {
 }
 
 /* Testimonios */
-#testimonios{
+#testimonios {
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -229,12 +232,52 @@ body {
 
 
 /* Blog */
-#blog{
+#blog {
     min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+/* Contacto */
+#contacto {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para los inputs con efecto glass */
+.glass {
+    border: 1px solid #fff;
+    /* Línea inferior */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo con transparencia */
+    color: white;
+    /* Color del texto */
+}
+
+.glass:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Cambio de color al enfocar */
+}
+
+/* Estilos para los placeholders */
+.glass::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Color del placeholder */
+}
+
+/* Estilos para los placeholders al enfocar */
+.glass:focus::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    /* Cambio de color del placeholder al enfocar */
+}
+
+
+
 
 /** Media Querys*/
 
