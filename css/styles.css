@@ -14,6 +14,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -36,7 +40,7 @@ body{
 
 #titulo {
     min-height: 10vh;
-    padding: 15px;
+    padding: 10px;
 
     .titulo {
         color: var(--azul-claro);
