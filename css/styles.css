@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Variables */
 :root {
     --azul: #00328f;
     --azul-medio: #0b48ba;
@@ -12,6 +12,10 @@
 * {
     color: var(--blanco);
     font-family: "Montserrat", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .btn-cta {
@@ -43,12 +47,9 @@
     }
 }
 
-
-
 .card {
     background-color: transparent;
 }
-
 
 .glass-card {
     background-color: rgba(255, 255, 255, 0.243);
@@ -77,7 +78,8 @@ body {
 
 #header {
     background-color: var(--azul);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
@@ -89,7 +91,6 @@ body {
 #header.shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 .nav-link {
     color: var(--blanco);
@@ -177,7 +178,7 @@ body {
 /*-------*/
 
 #sobre {
-    min-height: 90vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,48 +191,50 @@ body {
     flex-direction: column;
 }
 
-
-
 /* Cards two */
+/*-----------*/
 .card-title {
     font-weight: bold;
 }
 
 /* Habilidades */
+/*-------------*/
 #habilidades {
-    min-height: 50vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Servicios */
+/*-----------*/
 #servicios {
-    min-height: 90vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Proyectos */
+/*-----------*/
 #proyectos {
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Testimonios */
+/*-------------*/
 #testimonios {
-    min-height: 50vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-/* Blog */
+/*    Blog   */
+/*-----------*/
 #blog {
     min-height: 70vh;
     display: flex;
@@ -239,8 +242,8 @@ body {
     justify-content: center;
 }
 
-
 /* Contacto */
+/*-----------*/
 input{
     color: #fff !important;
 }
@@ -280,7 +283,8 @@ input{
     /* Cambio de color del placeholder al enfocar */
 }
 
-/* News */
+/*    News   */
+/*-----------*/
 #news{
     min-height: 30vh;
     display: flex;
@@ -298,6 +302,15 @@ input{
     background-color: var(--azul-medio);
     padding: 2rem;
     border-radius: 15px;
+}
+
+/*-- Footer --*/
+/*------------*/
+#footer{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /** Media Querys*/
