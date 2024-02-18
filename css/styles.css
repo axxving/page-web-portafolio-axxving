@@ -241,6 +241,10 @@ body {
 
 
 /* Contacto */
+input{
+    color: #fff !important;
+}
+
 #contacto {
     min-height: 70vh;
     display: flex;
@@ -276,8 +280,25 @@ body {
     /* Cambio de color del placeholder al enfocar */
 }
 
+/* News */
+#news{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.content-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.container-news{
+    background-color: var(--azul-medio);
+    padding: 2rem;
+    border-radius: 15px;
+}
 
 /** Media Querys*/
 
