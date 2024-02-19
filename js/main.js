@@ -44,13 +44,6 @@ sr.reveal('#cards-two .card', {
     interval: 200       // Intervalo entre la animación de cada tarjeta
 });
 
-// Revelar elementos de la sección "Habilidades"
-sr.reveal('#habilidades .progress-bar', {
-    origin: "bottom",   // Desde la parte inferior
-    distance: "20px",   // Distancia de revelación
-    interval: 200       // Intervalo entre la animación de cada barra de progreso
-});
-
 // Revelar elementos de la sección "Servicios"
 sr.reveal('#servicios .card', {
     origin: "bottom",   // Desde la parte inferior

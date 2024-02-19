@@ -1,47 +1,75 @@
+/*Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Variables */
 :root {
-    --azul: #00328f;
-    --azul-medio: #0b48ba;
-    --azul-claro: #3fc3dd;
+    /* Colores generales */
+    --azul: #2036B3;
+    --azul-medio: #2F81FF;
+    --azul-claro: #5CE1E6;
+    --azul-oscuro: #10092B;
     --blanco: #ffffff;
+    --negro: #1A1A1A;
+    --negro-claro: #252525;
+
+    /* Botones */
+    --fondo-botones: #cccccc7a;
 }
 
 /* Estilos generales */
+/*-------------------*/
 * {
-    color: #ffffff;
+    color: var(--blanco);
     font-family: "Montserrat", sans-serif;
 }
 
-html{
+p {
+    font-size: 1.3rem;
+}
+
+html {
     scroll-behavior: smooth !important;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
+.azul {
+    color: var(--azul-claro);
+}
+
 .btn-cta {
-    border-radius: 20px;
-    background-color: var(--azul-claro);
+    border-radius: 10px;
+    background-color: var(--fondo-botones);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--blanco);
     color: var(--blanco);
+    font-weight: bold;
 
     &:hover {
-        background-color: var(--azul-medio);
-        color: var(--blanco);
+        background-color: var(--blanco);
+        color: var(--negro);
+
+        .bi {
+            color: var(--negro);
+        }
     }
 
     &:active {
         background-color: var(--azul-claro);
-        border: 1px solid #fff;
+        border: 1px solid var(--blanco);
+
+        .bi {
+            color: var(--blanco);
+        }
     }
 }
 
 #titulo {
     min-height: 10vh;
-    background-color: #1A1A1A;
-    padding: 10px;
+    padding: 15px;
+    background-color: var(--negro);
 
     .titulo {
         color: var(--azul-claro);
@@ -72,17 +100,10 @@ body{
     justify-content: center;
 }
 
-/*  Estilos del body  */
-/*--------------------*/
-body {
-    
-}
-
 /* Estilos del Header */
 /*--------------------*/
-
 #header {
-    background-color: #d9d9d94b;
+    background-color: var(--negro-claro);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -115,7 +136,7 @@ body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    color: white !important;
+    color: var(--blanco) !important;
 }
 
 .navbar-toggler {
@@ -137,14 +158,11 @@ body {
     background-image: url(/imgs/fondos/1.png);
     background-size: cover;
     background-position: center;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    .container-hero {
-        .row-hero {}
-    }
+    padding-top: 20px;
 }
 
 .container-texto-hero {
@@ -153,13 +171,13 @@ body {
     justify-content: center;
 
     .nombre {
-        color: #ffffff;
+        color: var(--blanco);
         font-size: 3rem;
         font-weight: bolder;
         color: var(--blanco);
 
         .apellido {
-            color: var(--azul-claro);
+            color: var(--azul-medio);
         }
     }
 
@@ -172,11 +190,11 @@ body {
 }
 
 .planeta {
-    width: 50%;
-    border-radius: 50%;
+    width: 80%;
 }
 
 /* Cards */
+/*-------*/
 #cards-one {
     min-height: 90vh;
     display: flex;
@@ -193,15 +211,15 @@ body {
 
 /* Sobre */
 /*-------*/
-
 #sobre {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/3.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .contenedor-texto-sobre {
@@ -213,8 +231,8 @@ body {
 
 /* Cards two */
 /*-----------*/
-#cards-two{
-    background-color: #1A1A1A;
+#cards-two {
+    background-color: var(--negro);
 }
 
 .card-title {
@@ -224,14 +242,49 @@ body {
 /* Habilidades */
 /*-------------*/
 #habilidades {
-    min-height: 90vh;
-    background-image: url(/imgs/fondos/3.png);
-    background-size: cover;
-    background-position: center;
+    min-height: 50vh;
+    background-color: var(--negro);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Estilos para la barra de progreso HTML5 */
+.html-progress {
+    background-color: #e34c26;
+    /* Color característico de HTML5 */
+}
+
+/* Estilos para la barra de progreso CSS3 */
+.css-progress {
+    background-color: #2965f1;
+    /* Color característico de CSS3 */
+}
+
+/* Estilos para la barra de progreso JavaScript */
+.js-progress {
+    background-color: #f7df1e;
+    /* Color característico de JavaScript */
+}
+
+/* Estilos para la barra de progreso Laravel */
+.laravel-progress {
+    background-color: #ff2d20;
+    /* Color característico de Laravel */
+}
+
+/* Estilos para la barra de progreso Vue.js */
+.vue-progress {
+    background-color: #41b883;
+    /* Color característico de Vue.js */
+}
+
+/* Estilos para la barra de progreso SQL */
+.sql-progress {
+    background-color: #336791;
+    /* Color característico de SQL */
+}
+
 
 /* Servicios */
 /*-----------*/
@@ -283,7 +336,7 @@ body {
 
 /* Contacto */
 /*-----------*/
-input{
+input {
     color: #fff !important;
 }
 
@@ -327,7 +380,7 @@ input{
 
 /*    News   */
 /*-----------*/
-#news{
+#news {
     min-height: 30vh;
     background-color: #181818;
     display: flex;
@@ -335,13 +388,13 @@ input{
     justify-content: center;
 }
 
-.content-input{
+.content-input {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-news{
+.container-news {
     background-color: var(--azul-medio);
     padding: 2rem;
     border-radius: 15px;
@@ -349,7 +402,7 @@ input{
 
 /*-- Footer --*/
 /*------------*/
-#footer{
+#footer {
     min-height: 50vh;
     background-color: #000;
     display: flex;
