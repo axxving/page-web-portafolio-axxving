@@ -23,6 +23,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.bi-whatsapp{
+    margin-right: 5px;
+}
+
 .navbar-nav .active {
     background-color: #5CE1E6;
     /* Otros estilos que desees aplicar */
@@ -42,10 +46,6 @@
     border: 1px solid var(--blanco);
     cursor: pointer;
     transition: bottom 0.3s ease;
-}
-
-.btn-up:hover {
-    font-size: 1.1rem;
 }
 
 .bix {
@@ -85,7 +85,6 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid var(--blanco);
     color: var(--blanco);
-    font-weight: bold;
 
     &:hover {
         background-color: var(--blanco);
