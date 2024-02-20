@@ -115,3 +115,41 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén el elemento de navegación
+    var nav = document.querySelector('.navbar-nav');
+
+    // Agrega un evento de clic para los enlaces del menú
+    for (var i = 0; i < nav.children.length; i++) {
+        var link = nav.children[i].querySelector('a');
+        link.addEventListener('click', function (event) {
+            // Previene la acción predeterminada del enlace
+            event.preventDefault();
+
+            // Obtiene el destino del enlace
+            var targetSectionId = this.getAttribute('href').substring(1);
+            var targetSection = document.getElementById(targetSectionId);
+
+            // Desplaza la ventana a la posición de la sección
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+
+            // Cambia el color del texto del enlace clicado
+            for (var j = 0; j < nav.children.length; j++) {
+                nav.children[j].querySelector('a').style.color = '';
+            }
+            this.style.color = '#5CE1E6';
+        });
+    }
+
+    // Agrega un evento de escucha para hacer algo cuando la ventana se desplace
+    window.addEventListener('scroll', function () {
+        // Restaura el color del texto cuando te desplazas fuera de todas las secciones
+        for (var i = 0; i < nav.children.length; i++) {
+            nav.children[i].querySelector('a').style.color = '';
+        }
+    });
+});

@@ -23,6 +23,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.navbar-nav .active {
+    background-color: #5CE1E6;
+    /* Otros estilos que desees aplicar */
+}
+
+
 .btn-up {
     background-color: var(--fondo-botones);
     border-radius: 15px;
@@ -46,7 +52,7 @@
     font-size: 2rem;
 }
 
-a {
+.footer-a {
     font-size: 1.1rem;
     text-decoration: none;
     transition: all ease-in-out 300ms;
