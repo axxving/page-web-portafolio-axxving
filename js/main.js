@@ -100,3 +100,18 @@ sr.reveal('#footer .col-md-3', {
     distance: "20px",   // Distancia de revelación
     interval: 200       // Intervalo entre cada columna
 });
+
+// Boton UP
+document.addEventListener("DOMContentLoaded", function () {
+    const btnUp = document.getElementById("boton-up");
+
+    window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        if (scrollY >= 200) {
+            btnUp.style.bottom = "15px"; // Ajusta la posición según tus necesidades
+        } else {
+            btnUp.style.bottom = "-100px"; // Oculta el botón fuera de la pantalla
+        }
+    });
+});

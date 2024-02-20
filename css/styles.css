@@ -23,15 +23,35 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.bix{
+.btn-up {
+    background-color: var(--fondo-botones);
+    border-radius: 15px;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: -100px;
+    /* Inicialmente oculto fuera de la pantalla */
+    right: 0;
+    z-index: 1000;
+    margin: 20px;
+    border: 1px solid var(--blanco);
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+
+.btn-up:hover {
+    font-size: 1.1rem;
+}
+
+.bix {
     font-size: 2rem;
 }
 
-a{
+a {
     font-size: 1.1rem;
     text-decoration: none;
     transition: all ease-in-out 300ms;
-    &:hover{
+
+    &:hover {
         font-size: 1.3rem;
         color: var(--azul-claro);
     }
@@ -486,12 +506,14 @@ input {
     padding: 10px 15px;
     /* Espaciado interno */
     cursor: pointer;
+
     /* Cursor al pasar sobre el botón */
-    &:hover{
+    &:hover {
         background-color: #e7e7e7ce;
         color: var(--blanco);
     }
-    &:active{
+
+    &:active {
         background-color: #000000ce !important;
         color: var(--blanco) !important;
     }
