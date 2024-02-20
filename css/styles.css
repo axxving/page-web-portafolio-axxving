@@ -35,7 +35,7 @@
 
 .btn-up {
     background-color: var(--fondo-botones);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px 15px;
     position: fixed;
     bottom: -100px;
@@ -58,7 +58,7 @@
     transition: all ease-in-out 300ms;
 
     &:hover {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: var(--azul-claro);
     }
 }
@@ -490,7 +490,7 @@ input {
 
 .container-news {
     border: 1px solid var(--blanco);
-    background-color: #cecece63;
+    background-color: var(--fondo-botones);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 15px;

@@ -153,3 +153,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// Espera a que el documento esté completamente cargado
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtén el botón de hamburguesa y la barra de navegación
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbarNav = document.querySelector('#navbarNav');
+
+    // Agrega un evento de clic al botón de hamburguesa
+    navbarToggler.addEventListener('click', function () {
+        // Verifica si la barra de navegación está abierta
+        var isOpen = navbarNav.classList.contains('show');
+
+        // Si está abierta, ciérrala; si está cerrada, no hagas nada
+        if (isOpen) {
+            navbarToggler.click(); // Simula un clic para cerrar la barra de navegación
+        }
+    });
+
+    // Agrega eventos de clic a los elementos del menú para cerrar la barra de navegación
+    var menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            navbarToggler.click(); // Cierra la barra de navegación al hacer clic en un elemento del menú
+        });
+    });
+});
