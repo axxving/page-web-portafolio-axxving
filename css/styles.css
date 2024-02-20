@@ -23,6 +23,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.bix{
+    font-size: 2rem;
+}
+
 p {
     font-size: 1.3rem;
 }
@@ -100,6 +104,26 @@ body {
     justify-content: center;
 }
 
+.glass-card-tec {
+    background-color: rgba(255, 255, 255, 0.243);
+    /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px);
+    /* Aplica un efecto de desenfoque al fondo */
+    border-radius: 10px;
+    /* Redondea las esquinas de la card */
+    margin: 10px;
+
+    border: 1px solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
 /* Estilos del Header */
 /*--------------------*/
 #header {
@@ -113,18 +137,18 @@ body {
 
     .navbar {
         .container-header {
-            .navbar-brand {
-                
-            }
+            .navbar-brand {}
 
             .navbar-toggler {
                 color: transparent !important;
                 outline: none;
                 border: none;
-                &:focus{
+
+                &:focus {
                     outline: none;
                     border: none;
                 }
+
                 .navbar-toggler-icon {
                     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
                 }
@@ -150,13 +174,14 @@ body {
                         }
                     }
 
-                    .icons-nav{
+                    .icons-nav {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         flex-direction: row !important;
-                        .nav-link{
-                            .bi{
+
+                        .nav-link {
+                            .bi {
                                 margin-right: 10px;
                                 margin-left: 10px;
                             }
@@ -208,6 +233,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 .planeta {
                     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                     width: 80%;
@@ -244,23 +270,23 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
 
-.contenedor-texto-sobre {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    .container-sobre {
+        .row-sobre {
+            .contenedor-texto-sobre {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 /* Cards two */
 /*-----------*/
 #cards-two {
     background-color: var(--negro);
-}
-
-.card-title {
-    font-weight: bold;
 }
 
 /* Habilidades */
@@ -271,44 +297,53 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-/* Estilos para la barra de progreso HTML5 */
-.html-progress {
-    background-color: #e34c26;
-    /* Color característico de HTML5 */
-}
+    .container-progres {
+        .row-progres {
+            .columna-uno {
 
-/* Estilos para la barra de progreso CSS3 */
-.css-progress {
-    background-color: #2965f1;
-    /* Color característico de CSS3 */
-}
+                /* Estilos para la barra de progreso HTML5 */
+                .html-progress {
+                    background-color: #e34c26;
+                    /* Color característico de HTML5 */
+                }
 
-/* Estilos para la barra de progreso JavaScript */
-.js-progress {
-    background-color: #f7df1e;
-    /* Color característico de JavaScript */
-}
+                /* Estilos para la barra de progreso CSS3 */
+                .css-progress {
+                    background-color: #2965f1;
+                    /* Color característico de CSS3 */
+                }
 
-/* Estilos para la barra de progreso Laravel */
-.laravel-progress {
-    background-color: #ff2d20;
-    /* Color característico de Laravel */
-}
+                /* Estilos para la barra de progreso JavaScript */
+                .js-progress {
+                    background-color: #f7df1e;
+                    /* Color característico de JavaScript */
+                }
+            }
 
-/* Estilos para la barra de progreso Vue.js */
-.vue-progress {
-    background-color: #41b883;
-    /* Color característico de Vue.js */
-}
+            .columna-dos {
 
-/* Estilos para la barra de progreso SQL */
-.sql-progress {
-    background-color: #336791;
-    /* Color característico de SQL */
-}
+                /* Estilos para la barra de progreso Laravel */
+                .laravel-progress {
+                    background-color: #ff2d20;
+                    /* Color característico de Laravel */
+                }
 
+                /* Estilos para la barra de progreso Vue.js */
+                .vue-progress {
+                    background-color: #41b883;
+                    /* Color característico de Vue.js */
+                }
+
+                /* Estilos para la barra de progreso SQL */
+                .sql-progress {
+                    background-color: #336791;
+                    /* Color característico de SQL */
+                }
+            }
+        }
+    }
+}
 
 /* Servicios */
 /*-----------*/
@@ -419,16 +454,51 @@ input {
 }
 
 .container-news {
-    background-color: var(--azul-medio);
+    border: 1px solid var(--blanco);
+    background-color: #cecece63;
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 15px;
 }
 
+/* Estilos glass para el botón */
+.glass-button {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo transparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    border: none;
+    /* Sin bordes */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    color: #ffffff;
+    /* Color del texto */
+    padding: 10px 15px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cursor al pasar sobre el botón */
+    &:hover{
+        background-color: #e7e7e7ce;
+        color: var(--blanco);
+    }
+    &:active{
+        background-color: #000000ce !important;
+        color: var(--blanco) !important;
+    }
+}
+
+/* Estilo para el ícono dentro del botón */
+.glass-button i {
+    margin-right: 5px;
+    /* Espaciado a la derecha del ícono */
+}
+
+
 /*-- Footer --*/
 /*------------*/
 #footer {
-    min-height: 50vh;
-    background-color: #000;
+    min-height: 80vh;
+    background-color: var(--negro-claro);
     display: flex;
     align-items: center;
     justify-content: center;

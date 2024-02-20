@@ -164,8 +164,8 @@
   </div>
 
   <div class="container-fluid pt-5 pb-5" id="sobre">
-    <div class="container">
-      <div class="row">
+    <div class="container container-sobre">
+      <div class="row row-sobre">
         <div class="col-md-6">
           <img width="400" src="/imgs/ilustraciones/2.png" alt="Imagen" class="img-fluid mb-3">
         </div>
@@ -189,7 +189,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="card glass-card text-center">
+          <div class="card glass-card-tec text-center">
             <div class="card-body d-flex flex-column align-items-center">
               <!-- Icono -->
               <i class='bx bxl-html5 bx-lg mb-3'></i>
@@ -199,7 +199,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card glass-card text-center">
+          <div class="card glass-card-tec text-center">
             <div class="card-body d-flex flex-column align-items-center">
               <!-- Icono -->
               <i class='bx bxl-css3 bx-lg mb-3'></i>
@@ -209,7 +209,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card glass-card text-center">
+          <div class="card glass-card-tec text-center">
             <div class="card-body d-flex flex-column align-items-center">
               <!-- Icono -->
               <i class='bx bxl-javascript bx-lg mb-3'></i>
@@ -245,10 +245,10 @@
   </div>
 
   <div class="container-fluid pt-5 pb-5" id="habilidades">
-    <div class="container">
-      <div class="row">
+    <div class="container container-progres">
+      <div class="row row-progres">
         <!-- Barras de progreso a la izquierda -->
-        <div class="col-md-6">
+        <div class="col-md-6 columna-uno">
           <!-- Primera barra de progreso -->
           <div class="mt-3">
             <p>HTML5</p>
@@ -275,7 +275,7 @@
           </div>
         </div>
         <!-- Barras de progreso a la derecha -->
-        <div class="col-md-6">
+        <div class="col-md-6 columna-dos">
           <!-- Primera barra de progreso -->
           <div class="mt-3">
             <p>Laravel</p>
@@ -377,7 +377,7 @@
             <div class="card-body">
               <i class="bi bi-briefcase fs-1 mb-3"></i>
               <h5 class="card-title">Profesionalismo</h5>
-              <p class="card-text">Servicio profesional y comprometido para entregar proyectos de alta calidad a tiempo.
+              <p class="card-text">Servicio profesional y comprometido para entregar proyectos de alta calidad.
               </p>
             </div>
           </div>
@@ -816,7 +816,7 @@
               <textarea class="form-control glass" id="mensaje" rows="4"
                 placeholder="Escriba aquí su mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-cta">Enviar</button>
           </form>
         </div>
       </div>
@@ -841,7 +841,7 @@
               <div class="input-group">
                 <input type="email" class="form-control glass" id="email" placeholder="Tu correo electrónico"
                   aria-label="Tu correo electrónico" aria-describedby="button-addon2">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2"><i
+                <button class="btn btn-outline-primary glass-button" type="button" id="button-addon2"><i
                     class="bi bi-envelope"></i></button>
               </div>
             </div>
@@ -857,47 +857,47 @@
       <div class="row">
         <!-- Primera columna con imagen, párrafo y redes sociales -->
         <div class="col-md-3 mt-5 mb-5">
-          <img src="ruta-de-la-imagen.jpg" alt="Imagen">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <img class="mb-5" src="ruta-de-la-imagen.jpg" alt="Imagen">
+          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div class="social-icons">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a class="m-1" href="#"><i class="bi bix bi-facebook"></i></a>
+            <a class="m-1" href="#"><i class="bi bix bi-github"></i></a>
+            <a class="m-1" href="#"><i class="bi bix bi-instagram"></i></a>
+            <a class="m-1" href="#"><i class="bi bix bi-linkedin"></i></a>
           </div>
         </div>
 
         <!-- Segunda columna con título de Servicios y enlaces -->
         <div class="col-md-3 mt-5 mb-5">
-          <h3>Servicios</h3>
+          <h3 class="mb-4">Servicios</h3>
           <ul>
-            <li><a href="#">Pagina Web</a></li>
-            <li><a href="#">Aplicacion Web</a></li>
-            <li><a href="#">Diseño Web</a></li>
-            <li><a href="#">Asesoria Web</a></li>
-            <li><a href="#">Consultoria</a></li>
+            <li class="mb-3"><a href="#">Pagina Web</a></li>
+            <li class="mb-3"><a href="#">Aplicacion Web</a></li>
+            <li class="mb-3"><a href="#">Diseño Web</a></li>
+            <li class="mb-3"><a href="#">Asesoria Web</a></li>
+            <li class="mb-3"><a href="#">Consultoria</a></li>
           </ul>
         </div>
 
         <!-- Tercera columna con título de Enlaces Rápidos y enlaces -->
         <div class="col-md-3 mt-5 mb-5">
-          <h3>Enlaces Rápidos</h3>
+          <h3 class="mb-4">Enlaces Rápidos</h3>
           <ul>
-            <li><a href="#sobre">Acerca</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#proyectos">Portafolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li class="mb-3"><a href="#sobre">Acerca</a></li>
+            <li class="mb-3"><a href="#servicios">Servicios</a></li>
+            <li class="mb-3"><a href="#proyectos">Portafolio</a></li>
+            <li class="mb-3"><a href="#blog">Blog</a></li>
+            <li class="mb-3"><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
 
         <!-- Cuarta columna con título de Contacto y enlaces -->
         <div class="col-md-3 mt-5 mb-5">
-          <h3>Contacto</h3>
+          <h3 class="mb-4">Contacto</h3>
           <ul>
-            <li><i class="bi bi-telephone"></i> <a href="tel:+123456789">123-456-789</a></li>
-            <li><i class="bi bi-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
-            <li><i class="bi bi-geo-alt"></i> <a href="#">Dirección</a></li>
+            <li class="mb-3"><i class="bi bi-telephone"></i> <a href="tel:+123456789">123-456-789</a></li>
+            <li class="mb-3"><i class="bi bi-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+            <li class="mb-3"><i class="bi bi-geo-alt"></i> <a href="#">Dirección</a></li>
           </ul>
         </div>
       </div>

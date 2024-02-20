@@ -57,13 +57,6 @@ sr.reveal('#proyectos .tab-content', {
     distance: "20px"    // Distancia de revelación
 });
 
-// Revelar elementos de la sección "Testimonios"
-sr.reveal('#testimonios', {
-    origin: "bottom",   // Desde la parte inferior
-    distance: "20px",   // Distancia de revelación
-    interval: 300       // Intervalo entre cada elemento
-});
-
 // Revelar elementos de la sección "Blog"
 sr.reveal('#blog .card', {
     origin: "bottom",   // Desde la parte inferior
