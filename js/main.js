@@ -172,11 +172,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Agrega eventos de clic a los elementos del menú para cerrar la barra de navegación
+    // Agrega eventos de clic a los elementos del menú solo si la barra de navegación está abierta
     var menuItems = document.querySelectorAll('.navbar-nav .nav-link');
     menuItems.forEach(function (item) {
         item.addEventListener('click', function () {
-            navbarToggler.click(); // Cierra la barra de navegación al hacer clic en un elemento del menú
+            var isOpen = navbarNav.classList.contains('show');
+            if (isOpen) {
+                navbarToggler.click(); // Cierra la barra de navegación al hacer clic en un elemento del menú
+            }
         });
     });
 });
