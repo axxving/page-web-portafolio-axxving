@@ -29,7 +29,8 @@
 
 a{
     font-size: 1.1rem;
-    transition: all ease-in-out 200ms;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
     &:hover{
         font-size: 1.3rem;
         color: var(--azul-claro);
@@ -339,8 +340,8 @@ body {
                 }
 
                 /* Estilos para la barra de progreso Vue.js */
-                .vue-progress {
-                    background-color: #41b883;
+                .bootstrap {
+                    background-color: #9641b8;
                     /* Color característico de Vue.js */
                 }
 
