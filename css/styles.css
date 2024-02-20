@@ -109,51 +109,71 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-#header {
     transition: transform 0.3s ease-in-out;
-}
 
-#header.shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+    .navbar {
+        .container-header {
+            .navbar-brand {
+                
+            }
 
-.nav-link {
-    color: var(--blanco);
+            .navbar-toggler {
+                color: transparent !important;
+                outline: none;
+                border: none;
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                }
+            }
 
-    &:hover {
-        color: var(--azul-claro);
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: var(--blanco);
+
+                            &:hover {
+                                color: var(--azul-claro);
+                            }
+
+                            &:active {
+                                color: var(--azul-claro);
+                            }
+
+                            &:focus {
+                                color: var(--azul-claro);
+                            }
+                        }
+                    }
+
+                    .icons-nav{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row !important;
+                        .nav-link{
+                            .bi{
+                                margin-right: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #navbarNav {
+                padding-left: 10px;
+            }
+        }
     }
-
-    &:active {
-        color: var(--azul-claro);
-    }
-
-    &:focus {
-        color: var(--azul-claro);
-    }
-}
-
-.custom-toggler .navbar-toggler-icon {
-    color: var(--blanco) !important;
-}
-
-.navbar-toggler {
-    color: transparent !important;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-#navbarNav {
-    padding-left: 10px;
 }
 
 /* Estilos del Hero */
 /*------------------*/
-
 #hero {
     background-image: url(/imgs/fondos/1.png);
     background-size: cover;
@@ -163,34 +183,38 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-}
 
-.container-texto-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .container-hero {
+        .row-hero {
+            .container-texto-hero {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-    .nombre {
-        color: var(--blanco);
-        font-size: 3rem;
-        font-weight: bolder;
-        color: var(--blanco);
+                .nombre {
+                    color: var(--blanco);
+                    font-size: 3rem;
+                    font-weight: bolder;
+                    color: var(--blanco);
 
-        .apellido {
-            color: var(--azul-medio);
+                    .apellido {
+                        color: var(--azul-medio);
+                    }
+                }
+
+            }
+
+            .container-planeta {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .planeta {
+                    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+                    width: 80%;
+                }
+            }
         }
     }
-
-}
-
-.container-planeta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.planeta {
-    width: 80%;
 }
 
 /* Cards */
