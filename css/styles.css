@@ -80,7 +80,6 @@ body {
 }
 
 .btn-cta {
-    border-radius: 10px;
     background-color: var(--fondo-botones);
     backdrop-filter: blur(10px);
     border: 1px solid var(--blanco);
@@ -153,6 +152,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .card-title {
@@ -577,3 +583,11 @@ input {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
+
+/* Proyectos */
+.rickandmorty{
+    background-image: url(/imgs/proyectos/Captura\ desde\ 2024-02-24\ 14-04-14.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
