@@ -63,10 +63,6 @@
     }
 }
 
-p {
-    font-size: 1.3rem;
-}
-
 html {
     scroll-behavior: smooth !important;
 }
@@ -584,6 +580,10 @@ input {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
 
+.proyecto{
+
+}
+
 /* Proyectos */
 .rickandmorty{
     background-image: url(/imgs/proyectos/Captura\ desde\ 2024-02-24\ 14-04-14.png);
@@ -594,6 +594,13 @@ input {
 
 .encriptador{
     background-image: url(/imgs/proyectos/Captura\ desde\ 2024-02-27\ 20-08-26.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.marketup{
+    background-image: url(/imgs/proyectos/Captura\ desde\ 2024-02-28\ 12-17-52.png);
     background-size: cover;
     background-position: center;
     height: 200px;
