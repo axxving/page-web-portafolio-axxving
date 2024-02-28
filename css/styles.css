@@ -35,7 +35,7 @@
 
 .btn-up {
     background-color: var(--fondo-botones);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 15px;
     position: fixed;
     bottom: -100px;
@@ -495,7 +495,7 @@ input {
     background-color: var(--fondo-botones);
     backdrop-filter: blur(10px);
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /* Estilos glass para el botón */
