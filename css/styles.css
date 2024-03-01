@@ -1,49 +1,43 @@
-/*Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*TODO: Fuente Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Variables */
+/*TODO: Variables */
 :root {
-    /* Colores generales */
+    /** Colores generales */
     --azul: #2036B3;
-    --azul-medio: #2F81FF;
-    --azul-claro: #5CE1E6;
+    --azul-medio: #7991ff;
+    --azul-claro: #5271FF;
     --azul-oscuro: #10092B;
     --blanco: #ffffff;
     --negro: #000000;
     --negro-claro: #252525;
 
-    /* Botones */
-    --fondo-botones: #cccccc17;
+    /** Color Botones */
+    --fondo-transparente: #cccccc17;
 }
 
-/* Estilos generales */
-/*-------------------*/
+/*TODO Estilos generales*/
 * {
     color: var(--blanco);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
 }
 
-body {
-    background-color: var(--negro);
+html {
+    scroll-behavior: smooth !important;
 }
 
-.bi-whatsapp {
-    margin-right: 5px;
+.azul {
+    color: var(--azul-claro);
 }
 
-.navbar-nav .active {
-    background-color: #5CE1E6;
-    /* Otros estilos que desees aplicar */
-}
-
-
+/*TODO Botones*/
 .btn-up {
-    background-color: var(--fondo-botones);
+    background-color: var(--fondo-transparente);
     border-radius: 5px;
     padding: 10px 15px;
     position: fixed;
     bottom: -100px;
-    /* Inicialmente oculto fuera de la pantalla */
     right: 0;
     z-index: 1000;
     margin: 20px;
@@ -52,35 +46,8 @@ body {
     transition: bottom 0.3s ease;
 }
 
-.bix {
-    font-size: 2rem;
-}
-
-.footer-a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: all ease-in-out 300ms;
-
-    &:hover {
-        font-size: 1.2rem;
-        color: var(--azul-claro);
-    }
-}
-
-html {
-    scroll-behavior: smooth !important;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.azul {
-    color: var(--azul-claro);
-}
-
 .btn-cta {
-    background-color: var(--fondo-botones);
+    background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
     border: 1px solid var(--blanco);
     color: var(--blanco);
@@ -104,6 +71,33 @@ body {
     }
 }
 
+/*TODO Enlaces*/
+.navbar-nav .active {
+    background-color: var(--azul-claro);
+}
+
+.footer-a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+
+    &:hover {
+        font-size: 1.2rem;
+        color: var(--azul-claro);
+    }
+}
+
+/*TODO Iconos*/
+.bi-whatsapp {
+    margin-right: 5px;
+}
+
+.bix {
+    font-size: 2rem;
+
+}
+
+/*TODO Titulos*/
 #titulo {
     min-height: 10vh;
     padding: 15px;
@@ -118,6 +112,7 @@ body {
     }
 }
 
+/*TODO Cards*/
 .card {
     background-color: transparent;
 }
@@ -163,8 +158,20 @@ body {
     font-weight: bold;
 }
 
-/* Estilos del Header */
-/*--------------------*/
+/*TODO Carrusel*/
+.item-carrusel {
+    background-color: transparent;
+}
+
+/*? -------------------------------------------*/
+
+/**Body*/
+body {
+    background-color: var(--negro);
+    overflow-x: hidden;
+}
+
+/**Header*/
 #header {
     background-color: var(--negro-claro);
     backdrop-filter: blur(10px);
@@ -195,6 +202,10 @@ body {
 
             .navbar-collapse {
                 .navbar-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     .nav-item {
                         .nav-link {
                             color: var(--blanco);
@@ -221,8 +232,7 @@ body {
 
                         .nav-link {
                             .bi {
-                                margin-right: 10px;
-                                margin-left: 10px;
+                                font-size: 1.2rem;
                             }
                         }
                     }
@@ -236,8 +246,7 @@ body {
     }
 }
 
-/* Estilos del Hero */
-/*------------------*/
+/**Hero*/
 #hero {
     min-height: 100vh;
 
@@ -272,7 +281,7 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: var(--fondo-botones);
+                    background-color: var(--fondo-transparente);
                     backdrop-filter: blur(5px);
                     padding: 20px;
                     border-radius: 5px;
@@ -303,9 +312,7 @@ body {
     }
 }
 
-
-/* Cards */
-/*-------*/
+/**Cards one*/
 #cards-one {
     min-height: 90vh;
     display: flex;
@@ -316,12 +323,7 @@ body {
     background-position: center;
 }
 
-.item-carrusel {
-    background-color: transparent;
-}
-
-/* Sobre */
-/*-------*/
+/**Sobre*/
 #sobre {
     min-height: 100vh;
     background-image: url(/imgs/fondos/3.png);
@@ -344,14 +346,12 @@ body {
     }
 }
 
-/* Cards two */
-/*-----------*/
+/**Cards two*/
 #cards-two {
     background-color: var(--negro);
 }
 
-/* Habilidades */
-/*-------------*/
+/**Habilidades*/
 #habilidades {
     min-height: 50vh;
     background-color: var(--negro);
@@ -406,8 +406,7 @@ body {
     }
 }
 
-/* Servicios */
-/*-----------*/
+/**Servicios*/
 #servicios {
     min-height: 90vh;
     background-image: url(/imgs/fondos/4.png);
@@ -418,8 +417,7 @@ body {
     justify-content: center;
 }
 
-/* Proyectos */
-/*-----------*/
+/**Proyectos*/
 #proyectos {
     min-height: 90vh;
     background-image: url(/imgs/fondos/1.png);
@@ -429,180 +427,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-/* Testimonios */
-/*-------------*/
-#testimonios {
-    min-height: 90vh;
-    background-image: url(/imgs/fondos/2.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*    Blog   */
-/*-----------*/
-#blog {
-    min-height: 90vh;
-    background-image: url(/imgs/fondos/3.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Contacto */
-/*-----------*/
-input {
-    color: #fff !important;
-}
-
-#contacto {
-    min-height: 90vh;
-    background-image: url(/imgs/fondos/4.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Estilos para los inputs con efecto glass */
-.glass {
-    border: 1px solid #fff;
-    /* Línea inferior */
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Fondo con transparencia */
-    color: white;
-    /* Color del texto */
-}
-
-.glass:focus {
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.4);
-    /* Cambio de color al enfocar */
-}
-
-/* Estilos para los placeholders */
-.glass::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-    /* Color del placeholder */
-}
-
-/* Estilos para los placeholders al enfocar */
-.glass:focus::placeholder {
-    color: rgba(255, 255, 255, 0.9);
-    /* Cambio de color del placeholder al enfocar */
-}
-
-/*    News   */
-/*-----------*/
-#news {
-    min-height: 30vh;
-    background-color: #181818;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-news {
-    border: 1px solid var(--blanco);
-    background-color: var(--fondo-botones);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    border-radius: 5px;
-}
-
-/* Estilos glass para el botón */
-.glass-button {
-    background: rgba(255, 255, 255, 0.2);
-    /* Fondo transparente */
-    backdrop-filter: blur(10px);
-    /* Efecto de desenfoque */
-    border: none;
-    /* Sin bordes */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    color: #ffffff;
-    /* Color del texto */
-    padding: 10px 15px;
-    /* Espaciado interno */
-    cursor: pointer;
-
-    /* Cursor al pasar sobre el botón */
-    &:hover {
-        background-color: #e7e7e7ce;
-        color: var(--blanco);
-    }
-
-    &:active {
-        background-color: #000000ce !important;
-        color: var(--blanco) !important;
-    }
-}
-
-/* Estilo para el ícono dentro del botón */
-.glass-button i {
-    margin-right: 5px;
-    /* Espaciado a la derecha del ícono */
-}
-
-
-/*-- Footer --*/
-/*------------*/
-#footer {
-    min-height: 80vh;
-    background-color: var(--negro-claro);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/** Media Querys*/
-
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
-    .nombre {
-        font-size: 2rem !important;
-    }
-
-    .planeta {
-        margin-top: 50px;
-    }
-}
-
-/* Small devices (phones, 576px and up) */
-@media (min-width: 576px) {
-    .nombre {
-        font-size: 3rem !important;
-    }
-
-    .planeta {
-        margin-top: 50px;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .planeta {
-        margin-top: 50px;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
 
 .proyecto {
     position: relative;
@@ -669,6 +493,174 @@ input {
     color: white;
     /* Ajusta el color del texto según tus necesidades */
 }
+
+/**Testimonios*/
+#testimonios {
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**Blog*/
+#blog {
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**Contacto*/
+input {
+    color: #fff !important;
+}
+
+#contacto {
+    min-height: 90vh;
+    background-image: url(/imgs/fondos/4.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para los inputs con efecto glass */
+.glass {
+    border: 1px solid #fff;
+    /* Línea inferior */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo con transparencia */
+    color: white;
+    /* Color del texto */
+}
+
+.glass:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Cambio de color al enfocar */
+}
+
+/* Estilos para los placeholders */
+.glass::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Color del placeholder */
+}
+
+/* Estilos para los placeholders al enfocar */
+.glass:focus::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    /* Cambio de color del placeholder al enfocar */
+}
+
+/**News*/
+#news {
+    min-height: 30vh;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-news {
+    border: 1px solid var(--blanco);
+    background-color: var(--fondo-transparente);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+/* Estilos glass para el botón */
+.glass-button {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo transparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    border: none;
+    /* Sin bordes */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    color: #ffffff;
+    /* Color del texto */
+    padding: 10px 15px;
+    /* Espaciado interno */
+    cursor: pointer;
+
+    /* Cursor al pasar sobre el botón */
+    &:hover {
+        background-color: #e7e7e7ce;
+        color: var(--blanco);
+    }
+
+    &:active {
+        background-color: #000000ce !important;
+        color: var(--blanco) !important;
+    }
+}
+
+/* Estilo para el ícono dentro del botón */
+.glass-button i {
+    margin-right: 5px;
+    /* Espaciado a la derecha del ícono */
+}
+
+/**Footer*/
+#footer {
+    min-height: 80vh;
+    background-color: var(--negro-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*TODO Media Querys*/
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nombre {
+        font-size: 2rem !important;
+    }
+
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .nombre {
+        font-size: 3rem !important;
+    }
+
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .planeta {
+        margin-top: 50px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
 
 /*TODO: Animaciones*/
 @keyframes floatAnimation {
