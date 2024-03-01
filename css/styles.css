@@ -44,6 +44,9 @@ html {
     border: 1px solid var(--blanco);
     cursor: pointer;
     transition: bottom 0.3s ease;
+    .bi-arrow-up{
+        margin-right: 0px;
+    }
 }
 
 .btn-cta {
@@ -88,7 +91,7 @@ html {
 }
 
 /*TODO Iconos*/
-.bi-whatsapp {
+.bi {
     margin-right: 5px;
 }
 
