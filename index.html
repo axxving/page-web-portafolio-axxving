@@ -36,7 +36,6 @@
         <!-- Logo -->
         <a class="navbar-brand" href="#">
           <img width="80" src="/imgs/logos/logo-transparente.png" alt="Logo">
-          <img width="100" src="/imgs/logos/logo-letra-transparente.png" alt="Logo">
         </a>
 
         <!-- Botón de hamburguesa para pantallas pequeñas -->
@@ -80,30 +79,61 @@
   </header>
 
   <!-- Hero -->
-  <section class="container-fluid" id="hero">
-    <div class="container container-hero">
-      <div class="row row-hero">
-        <div class="col-lg-6 container-texto-hero">
-          <!-- Contenido -->
-          <div>
-            <!-- Título -->
-            <h2 class="nombre">Irving Alejandro <br> <span class="apellido">Hernández Ramírez</span></h2>
-            <!-- Párrafo -->
-            <p>Desarrollador Frontend</p>
-            <!-- Botón -->
-            <a target="_blank" href="https://wa.link/wxqq6l" class="btn btn-cta">
-              <i class="bi bi-whatsapp"></i> Contactar
-            </a>
-          </div>
-        </div>
+  <section class="container-fluid p-0 m-0" id="hero">
+    <!-- Contenedor del video de fondo -->
+    <div class="video-container">
+      <!-- Video de fondo -->
+      <video autoplay muted loop id="video-background">
+        <source src="/imgs/fondo-estrellas.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-        <div class="col-lg-6 container-planeta">
+      <div class="container container-hero">
+        <div class="row row-hero p-3">
+          <div class="col-lg-6 container-texto-hero">
+            <!-- Contenido -->
+            <div>
+              <!-- Título -->
+              <h2 class="nombre">IRVING ALEJANDRO <br> HERNÁNDEZ RAMÍREZ</h2>
+              <!-- Párrafo -->
+              <p>Desarrollador Frontend</p>
+
+              <!-- Párrafo adicional -->
+              <p>¡Hola! Soy un apasionado desarrollador frontend con experiencia en la creación de experiencias web
+                cautivadoras. Estoy aquí para ayudarte a dar vida a tus ideas y proyectos. ¡Hablemos de cómo puedo
+                contribuir al éxito de tu próximo proyecto!</p>
+
+              <!-- Subtítulo -->
+              <h3 class="mb-3">Mis Servicios</h3>
+
+              <!-- Botones con iconos -->
+              <div class="d-flex align-items-center">
+                <!-- Botón 1 -->
+                <a target="_blank" href="https://wa.link/wxqq6l" class="btn btn-outline-light me-3">
+                  <i class="bi bi-whatsapp"></i> Contactar
+                </a>
+                <!-- Botón 2 -->
+                <a target="_blank" href="/mi-portfolio" class="btn btn-outline-light">
+                  <i class="bi bi-card-text"></i> Ver Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+
           <!-- Imagen -->
-          <img class="planeta" src="/imgs/ilustraciones/1.png" alt="Descripción de la imagen">
+          <div class="col-lg-6 container-planeta mt-5 d-none d-lg-flex align-items-center justify-content-center">
+            <img class="planeta" src="/imgs/ilustraciones/1.png" alt="Descripción de la imagen">
+          </div>
+
+          <!-- ... (tu código posterior) ... -->
+
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- Cards -->
   <section class="container-fluid pt-5 pb-5" id="cards-one">

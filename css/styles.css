@@ -9,11 +9,11 @@
     --azul-claro: #5CE1E6;
     --azul-oscuro: #10092B;
     --blanco: #ffffff;
-    --negro: #1A1A1A;
+    --negro: #000000;
     --negro-claro: #252525;
 
     /* Botones */
-    --fondo-botones: #cccccc7a;
+    --fondo-botones: #cccccc17;
 }
 
 /* Estilos generales */
@@ -21,6 +21,10 @@
 * {
     color: var(--blanco);
     font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--negro);
 }
 
 .bi-whatsapp {
@@ -164,7 +168,7 @@ body {
 #header {
     background-color: var(--negro-claro);
     backdrop-filter: blur(10px);
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -235,48 +239,70 @@ body {
 /* Estilos del Hero */
 /*------------------*/
 #hero {
-    background-image: url(/imgs/fondos/1.png);
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
 
-    .container-hero {
-        .row-hero {
-            .container-texto-hero {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-                .nombre {
-                    color: var(--blanco);
-                    font-size: 3rem;
-                    font-weight: bolder;
-                    color: var(--blanco);
+        /* Estilos para el video */
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-                    .apellido {
-                        color: var(--azul-medio);
+        .container-hero {
+
+            .row-hero {
+                .container-texto-hero {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--fondo-botones);
+                    backdrop-filter: blur(5px);
+                    padding: 20px;
+                    border-radius: 5px;
+                    z-index: 10;
+
+                    .nombre {
+                        color: var(--blanco);
+                        font-size: 3rem;
+                        font-weight: bolder;
+                        color: var(--blanco);
+
+                        .apellido {
+                            color: var(--azul-medio);
+                        }
                     }
+
                 }
 
-            }
-
-            .container-planeta {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .planeta {
-                    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-                    width: 80%;
+                .container-planeta {
+                    .planeta {
+                        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+                        width: 80%;
+                        animation: floatAnimation 3s infinite;
+                    }
                 }
             }
         }
     }
 }
+
 
 /* Cards */
 /*-------*/
@@ -642,4 +668,19 @@ input {
     position: relative;
     color: white;
     /* Ajusta el color del texto según tus necesidades */
+}
+
+/*TODO: Animaciones*/
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
