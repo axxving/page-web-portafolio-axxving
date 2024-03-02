@@ -195,15 +195,15 @@ document.addEventListener("DOMContentLoaded", function () {
         breakpoints: {
             // Pantallas pequeñas: 576px o más
             576: {
-                slidesPerView: 1, // Mostrar una tarjeta por pantalla
+                slidesPerView: 1.5, // Mostrar una tarjeta por pantalla
             },
             // Pantallas medianas: 768px o más
             768: {
-                slidesPerView: 2, // Mostrar dos tarjetas por pantalla
+                slidesPerView: 2.5, // Mostrar dos tarjetas por pantalla
             },
             // Pantallas grandes: 992px o más
             992: {
-                slidesPerView: 3, // Mostrar tres tarjetas por pantalla
+                slidesPerView: 3.5, // Mostrar tres tarjetas por pantalla
             }
         }
     });
