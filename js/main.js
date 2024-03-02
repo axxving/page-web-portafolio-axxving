@@ -183,3 +183,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Este evento se dispara cuando el DOM ha sido completamente cargado
+document.addEventListener("DOMContentLoaded", function () {
+    // Inicializar Swiper para la nueva sección de tarjetas con diseño diferente
+    const mySwiper2 = new Swiper(".miSwiper", {
+        // Definir la cantidad de tarjetas visibles de forma automática
+        slidesPerView: "auto",
+        // Espacio entre tarjetas
+        spaceBetween: 10,
+        // Configuración de navegación con botones siguiente y anterior
+        navigation: {
+            nextEl: ".swiper-button-next", // Selector del botón siguiente
+            prevEl: ".swiper-button-prev", // Selector del botón anterior
+        },
+        // Configuración de breakpoints para cambiar la cantidad de tarjetas visibles en diferentes tamaños de pantalla
+        breakpoints: {
+            // Pantallas pequeñas: 576px o más
+            576: {
+                slidesPerView: 1, // Mostrar una tarjeta por pantalla
+            },
+            // Pantallas medianas: 768px o más
+            768: {
+                slidesPerView: 3, // Mostrar tres tarjetas por pantalla
+            },
+            // Pantallas grandes: 992px o más
+            992: {
+                slidesPerView: 4, // Mostrar cuatro tarjetas por pantalla
+            }
+        }
+    });
+});
