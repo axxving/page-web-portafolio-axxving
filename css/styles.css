@@ -49,10 +49,6 @@ p {
     animation: floatAnimation 3s infinite;
 }
 
-html {
-    scroll-behavior: smooth !important;
-}
-
 .azul {
     color: var(--azul-claro);
 }
@@ -198,7 +194,6 @@ html {
 /**Body*/
 body {
     background-color: var(--negro);
-    overflow-x: hidden;
 }
 
 /**Header*/

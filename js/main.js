@@ -37,13 +37,6 @@ sr.reveal('#sobre img', {
     distance: "20px"    // Distancia de revelación
 });
 
-// Revelar elementos de la sección "Cards Two"
-sr.reveal('#cards-two .card', {
-    origin: "bottom",   // Desde la parte inferior
-    distance: "20px",   // Distancia de revelación
-    interval: 200       // Intervalo entre la animación de cada tarjeta
-});
-
 // Revelar elementos de la sección "Servicios"
 sr.reveal('#servicios .card', {
     origin: "bottom",   // Desde la parte inferior
@@ -184,12 +177,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 // Este evento se dispara cuando el DOM ha sido completamente cargado
 document.addEventListener("DOMContentLoaded", function () {
     // Inicializar Swiper para la nueva sección de tarjetas con diseño diferente
     const miSwiper = new Swiper(".miSwiper", {
         // Definir la cantidad de tarjetas visibles de forma automática
-        slidesPerView: 5.5, // Cambié a 5.5 para pantallas grandes
+        slidesPerView: 'auto',
         // Espacio entre tarjetas
         spaceBetween: 10,
         // Configuración de navegación con botones siguiente y anterior
@@ -200,16 +194,16 @@ document.addEventListener("DOMContentLoaded", function () {
         // Configuración de breakpoints para cambiar la cantidad de tarjetas visibles en diferentes tamaños de pantalla
         breakpoints: {
             // Pantallas pequeñas: 576px o más
-            276: {
-                slidesPerView: 2.5, // Mostrar dos y medio tarjetas por pantalla
+            576: {
+                slidesPerView: 1, // Mostrar una tarjeta por pantalla
             },
             // Pantallas medianas: 768px o más
             768: {
-                slidesPerView: 3.5, // Mostrar tres y medio tarjetas por pantalla
+                slidesPerView: 2, // Mostrar dos tarjetas por pantalla
             },
             // Pantallas grandes: 992px o más
             992: {
-                slidesPerView: 5.5, // Mostrar cinco y medio tarjetas por pantalla
+                slidesPerView: 3, // Mostrar tres tarjetas por pantalla
             }
         }
     });
