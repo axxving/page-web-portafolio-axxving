@@ -45,7 +45,15 @@ p {
     /* Espaciado inferior entre párrafos */
 }
 
+.container-planeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .planeta {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    width: 80%;
     animation: floatAnimation 3s infinite;
 }
 
@@ -395,7 +403,7 @@ body {
 /**Habilidades*/
 #habilidades {
     min-height: 50vh;
-    
+
     background-color: var(--negro);
     display: flex;
     align-items: center;
