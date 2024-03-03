@@ -203,9 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Esperar a que todos los estilos CSS se carguen completamente
+// Agrega la clase "loaded" al body cuando la página haya cargado completamente
 window.addEventListener("load", function () {
-    // Ocultar la pantalla de carga después de que la página haya cargado completamente
-    document.getElementById("loader").style.opacity = 0;
-    document.getElementById("content").style.display = "block";
+    document.body.classList.add("loaded");
 });
