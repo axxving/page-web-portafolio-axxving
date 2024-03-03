@@ -6,12 +6,6 @@ const sr = ScrollReveal({
     delay: 300          // Retraso antes de la animación
 });
 
-// Revelar elementos del header
-sr.reveal('#header', {
-    origin: "top",      // Desde la parte superior
-    distance: "20px"    // Distancia de revelación
-});
-
 // Revelar elementos del hero
 sr.reveal('#hero .container-texto-hero', {
     origin: "left"      // Desde la izquierda
@@ -207,4 +201,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+});
+
+// Esperar a que todos los estilos CSS se carguen completamente
+window.addEventListener("load", function () {
+    // Ocultar la pantalla de carga después de que la página haya cargado completamente
+    document.getElementById("loader").style.opacity = 0;
+    document.getElementById("content").style.display = "block";
 });

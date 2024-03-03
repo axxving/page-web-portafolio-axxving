@@ -206,7 +206,7 @@ body {
 
 /**Header*/
 #header {
-    background-color: var(--negro-claro);
+    background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
     position: sticky;
     width: 100%;
@@ -726,4 +726,55 @@ input {
     100% {
         transform: translateY(0);
     }
+}
+
+/*TODO Spinner*/
+/* Estilos para la pantalla de carga */
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    /* Fondo semi-transparente rojo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    /* Capa superior para que esté por encima de otros elementos */
+    transition: opacity 0.5s;
+    /* Transición suave de la opacidad */
+    opacity: 1;
+    /* Opacidad inicial */
+}
+
+/* Estilos para el spinner de carga */
+.loader {
+    border: 8px solid var(--blanco);
+    /* Círculo exterior gris claro */
+    border-top: 8px solid var(--azul);
+    /* Círculo superior azul */
+    border-radius: 50%;
+    /* Borde redondeado para crear un círculo */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    /* Animación de rotación */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* Rotación inicial */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Rotación completa */
+    }
+}
+
+/* Ocultar la pantalla de carga después de que la página haya cargado */
+#content {
+    display: none;
+    /* Inicialmente oculto */
 }
