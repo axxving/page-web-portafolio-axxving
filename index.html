@@ -49,10 +49,10 @@
 
   <!--TODO Contenido de la pagina -->
 
-  <!--TODO Header -->
+  <!-- TODO Header -->
   <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container container-header">
+      <div class="container container-header d-flex justify-content-between align-items-center">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
           <img width="50" src="/imgs/logo.png" alt="Logo">
@@ -64,28 +64,32 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menú de navegación con íconos -->
+        <!-- Menú de navegación sin íconos centrado -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#hero"><i class="bi bi-house-door"></i> Inicio</a>
+              <a class="nav-link" href="#hero">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sobre"><i class="bi bi-person"></i> Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#servicios"><i class="bi bi-gear"></i> Servicios</a>
+              <a class="nav-link" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos"><i class="bi bi-briefcase"></i> Portafolio</a>
+              <a class="nav-link" href="#proyectos">Portafolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog"><i class="bi bi-journal-text"></i> Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
+        </div>
+
+        <!-- Botones de redes sociales a la derecha, ocultos en pantallas pequeñas -->
+        <div class="d-none d-lg-flex">
+          <button class="btn btn-outline-secondary me-2"><i class="bi bip bi-facebook"></i></button>
+          <button class="btn btn-outline-secondary me-2"><i class="bi bip bi-linkedin"></i></button>
+          <button class="btn btn-outline-secondary"><i class="bi bip bi-instagram"></i></button>
         </div>
       </div>
     </nav>
@@ -94,7 +98,7 @@
   <!--TODO Hero -->
   <section class="container-fluid p-0 m-0" id="hero">
     <!-- Contenedor del video de fondo -->
-    <div class="video-container">
+    <div class="video-container pt-5 mt-4">
       <!-- Video de fondo -->
       <video autoplay muted loop id="video-background">
         <source src="/imgs/fondo-estrellas.mp4" type="video/mp4">
@@ -103,7 +107,7 @@
 
       <div class="container container-hero">
         <div class="row row-hero p-3">
-          <div class="col-lg-6 container-texto-hero">
+          <div class="col-lg-6 container-texto-hero" id="hero-card">
             <!-- Contenido -->
             <div>
               <!-- Título -->
@@ -126,7 +130,7 @@
                   <i class="bi bi-whatsapp"></i> Contactar
                 </a>
                 <!-- Botón 2 -->
-                <a href="#proyectos" class="btn btn-outline-secondary">
+                <a href="#proyectos" class="btn btn-outline-warning">
                   <i class="bi bi-card-text"></i> Ver Portfolio
                 </a>
               </div>
@@ -149,7 +153,7 @@
       <div class="row justify-content-center">
         <!-- Primera card -->
         <div class="col-lg-4">
-          <div class="card text-center glass-card">
+          <div class="card text-center glass-card mb-3" id="card1">
             <div class="card-body">
               <!-- Icono -->
               <i class="bi bi-speedometer2" style="font-size: 3rem;"></i>
@@ -164,7 +168,7 @@
 
         <!-- Segunda card -->
         <div class="col-lg-4">
-          <div class="card text-center glass-card">
+          <div class="card text-center glass-card mb-3" id="card2">
             <div class="card-body">
               <!-- Icono -->
               <i class="bi bi-palette" style="font-size: 3rem;"></i>
@@ -179,7 +183,7 @@
 
         <!-- Tercera card -->
         <div class="col-lg-4">
-          <div class="card text-center glass-card">
+          <div class="card text-center glass-card mb-3" id="card3">
             <div class="card-body">
               <!-- Icono -->
               <i class="bi bi-code-slash" style="font-size: 3rem;"></i>
@@ -965,6 +969,10 @@
 
   <!-- Boxicons -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- JavaScript personalizado-->
   <script src="/js/main.js"></script>

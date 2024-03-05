@@ -69,6 +69,7 @@ p {
 /*TODO Botones*/
 .btn-up {
     background-color: var(--fondo-transparente);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
     padding: 10px 15px;
     position: fixed;
@@ -123,6 +124,11 @@ p {
     margin-right: 5px;
 }
 
+/*Normales*/
+.bip {
+    margin-right: 0px;
+}
+
 /*TODO Cards*/
 .card {
     background-color: transparent;
@@ -130,12 +136,9 @@ p {
 
 .glass-card {
     background-color: var(--fondo-transparente);
-    /* Color de fondo con transparencia */
     backdrop-filter: blur(10px);
-    /* Aplica un efecto de desenfoque al fondo */
-    border-radius: 10px;
-    /* Redondea las esquinas de la card */
-    margin: 10px;
+    border-radius: 5px;
+
 
     display: flex;
     align-items: center;
@@ -185,7 +188,7 @@ body {
 #header {
     background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -216,8 +219,6 @@ body {
 
                     .nav-item {
                         .nav-link {
-                            text-transform: uppercase;
-
                             color: var(--blanco);
 
                             &:hover {
@@ -507,7 +508,7 @@ body {
     /* Puedes ajustar los bordes según tus necesidades */
 }
 
-.contenedor-badges{
+.contenedor-badges {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -515,25 +516,25 @@ body {
     flex-wrap: wrap;
 }
 
-.badge{
+.badge {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.bg-html{
+.bg-html {
     background-color: #E34F26;
 }
 
-.bg-css{
+.bg-css {
     background-color: #267fe4;
 }
 
-.bg-js{
+.bg-js {
     background-color: #F7DF1E;
 }
 
-.bg-bootstrap{
+.bg-bootstrap {
     background-color: #9a3cf3;
 }
 
