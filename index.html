@@ -791,69 +791,75 @@
     <div class="container text-center pb-5">
       <div class="row">
         <div class="col text-center">
-          <h6 class="azul">Contacto</h6>
+          <h6 class="azul">¡Conversemos!</h6>
           <h2 class="subtitulo">Quiero escuchar de ti</h2>
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <!-- Columna izquierda con las bolitas -->
         <div class="col-md-6">
-          <!-- Bolita 1 -->
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-circle me-3">
-              <i class="bi bi-envelope-fill"></i>
+          <!-- Información de contacto -->
+          <div class="d-flex flex-column align-items-start mb-4">
+
+            <!-- Bolita 1 - Email -->
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-circle me-3">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p>alex.ing.rz@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <h5>Email</h5>
-              <p>alex.ing.rz@gmail.com</p>
+            <!-- Bolita 2 - Teléfono -->
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-circle me-3">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h5>Teléfono</h5>
+                <p>+52 2211251774</p>
+              </div>
             </div>
-          </div>
-          <!-- Bolita 2 -->
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-circle me-3">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div>
-              <h5>Teléfono</h5>
-              <p>+52 2211251774</p>
-            </div>
-          </div>
-          <!-- Bolita 3 -->
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-circle me-3">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div>
-              <h5>Dirección</h5>
-              <p>México, Puebla, #72620</p>
+            <!-- Bolita 3 - Dirección -->
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-circle me-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h5>Dirección</h5>
+                <p>México, Puebla, #72620</p>
+              </div>
             </div>
           </div>
         </div>
+
         <!-- Columna derecha con el formulario de contacto -->
         <div class="col-md-6">
           <form>
+            <!-- Formulario de contacto -->
             <div class="row">
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control glass mb-2" id="nombre" placeholder="Ingrese su nombre">
+                <input type="text" class="form-control glass mb-2" id="nombre" placeholder="Nombre">
               </div>
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control glass mb-2" id="apellido" placeholder="Ingrese su apellido">
+                <input type="text" class="form-control glass mb-2" id="apellido" placeholder="Apellido">
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <input type="tel" class="form-control glass mb-2" id="telefono" placeholder="Ingrese su teléfono">
+                <input type="tel" class="form-control glass mb-2" id="telefono" placeholder="Teléfono">
               </div>
               <div class="col-md-6 mb-3">
-                <input type="email" class="form-control glass mb-2" id="correo"
-                  placeholder="Ingrese su correo electrónico">
+                <input type="email" class="form-control glass mb-2" id="correo" placeholder="Correo electrónico">
               </div>
             </div>
             <div class="mb-3">
               <textarea class="form-control glass" id="mensaje" rows="4"
-                placeholder="Escriba aquí su mensaje"></textarea>
+                placeholder="Escribe aquí tu mensaje"></textarea>
             </div>
             <button type="submit" class="btn btn-cta">Enviar</button>
           </form>
