@@ -11,6 +11,12 @@
     --gris-oscuro: #1f1f1f;
     --negro: #000000;
 
+    /**Redes sociales*/
+    --whatsapp: #30D24E;
+    --facebook: #0866FF;
+    --linkedin: #0A66C2;
+    --instagram: #EB4668;
+
     /** Color Botones */
     --fondo-transparente: #cccccc17;
 }
@@ -25,7 +31,6 @@
 /*Titulos*/
 .titulo {
     text-transform: uppercase;
-    font-weight: bolder;
     color: var(--blanco);
 }
 
@@ -110,6 +115,98 @@ p {
         .bi {
             color: var(--blanco);
         }
+    }
+}
+
+.btn-whatsapp {
+    border: 1px solid var(--whatsapp) !important;
+    color: var(--whatsapp);
+
+    .icono-whatsapp-header {
+        color: var(--whatsapp);
+    }
+
+    &:hover {
+        border: 1px solid var(--whatsapp) !important;
+        background-color: var(--whatsapp);
+
+        .icono-whatsapp-header {
+            color: var(--blanco);
+        }
+    }
+
+    &:active {
+        border: 1px solid var(--whatsapp) !important;
+        background-color: var(--whatsapp) !important;
+    }
+}
+
+.btn-facebook{
+    border: 1px solid var(--facebook) !important;
+    color: var(--facebook);
+
+    .icono-whatsapp-header {
+        color: var(--facebook);
+    }
+
+    &:hover {
+        border: 1px solid var(--facebook) !important;
+        background-color: var(--facebook);
+
+        .icono-whatsapp-header {
+            color: var(--blanco);
+        }
+    }
+
+    &:active {
+        border: 1px solid var(--facebook) !important;
+        background-color: var(--facebook) !important;
+    }
+}
+
+.btn-linkedin{
+    border: 1px solid var(--linkedin) !important;
+    color: var(--linkedin);
+
+    .icono-whatsapp-header {
+        color: var(--linkedin);
+    }
+
+    &:hover {
+        border: 1px solid var(--linkedin) !important;
+        background-color: var(--linkedin);
+
+        .icono-whatsapp-header {
+            color: var(--blanco);
+        }
+    }
+
+    &:active {
+        border: 1px solid var(--linkedin) !important;
+        background-color: var(--linkedin) !important;
+    }
+}
+
+.btn-instagram{
+    border: 1px solid var(--instagram) !important;
+    color: var(--instagram);
+
+    .icono-whatsapp-header {
+        color: var(--instagram);
+    }
+
+    &:hover {
+        border: 1px solid var(--instagram) !important;
+        background-color: var(--instagram);
+
+        .icono-whatsapp-header {
+            color: var(--blanco);
+        }
+    }
+
+    &:active {
+        border: 1px solid var(--instagram) !important;
+        background-color: var(--instagram) !important;
     }
 }
 

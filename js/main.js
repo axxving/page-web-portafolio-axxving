@@ -208,26 +208,29 @@ window.addEventListener("load", function () {
     document.body.classList.add("loaded");
 });
 
-// Inicializar VanillaTilt en tu tarjeta
-VanillaTilt.init(document.getElementById('card1'), {
-    max: 25, // Máximo ángulo de inclinación
-    speed: 400, // Velocidad de la animación
-    glare: true, // Agregar efecto de reflejo
-    'max-glare': 0.3, // Intensidad del reflejo
-});
+if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
 
-// Inicializar VanillaTilt en tu tarjeta
-VanillaTilt.init(document.getElementById('card2'), {
-    max: 25, // Máximo ángulo de inclinación
-    speed: 400, // Velocidad de la animación
-    glare: true, // Agregar efecto de reflejo
-    'max-glare': 0.3, // Intensidad del reflejo
-});
+    // Inicializar VanillaTilt en tu tarjeta
+    VanillaTilt.init(document.getElementById('card1'), {
+        max: 10, // Máximo ángulo de inclinación
+        speed: 400, // Velocidad de la animación
+        glare: true, // Agregar efecto de reflejo
+        'max-glare': 0.3, // Intensidad del reflejo
+    });
 
-// Inicializar VanillaTilt en tu tarjeta
-VanillaTilt.init(document.getElementById('card3'), {
-    max: 25, // Máximo ángulo de inclinación
-    speed: 400, // Velocidad de la animación
-    glare: true, // Agregar efecto de reflejo
-    'max-glare': 0.3, // Intensidad del reflejo
-});
+    // Inicializar VanillaTilt en tu tarjeta
+    VanillaTilt.init(document.getElementById('card2'), {
+        max: 10, // Máximo ángulo de inclinación
+        speed: 400, // Velocidad de la animación
+        glare: true, // Agregar efecto de reflejo
+        'max-glare': 0.3, // Intensidad del reflejo
+    });
+
+    // Inicializar VanillaTilt en tu tarjeta
+    VanillaTilt.init(document.getElementById('card3'), {
+        max: 10, // Máximo ángulo de inclinación
+        speed: 400, // Velocidad de la animación
+        glare: true, // Agregar efecto de reflejo
+        'max-glare': 0.3, // Intensidad del reflejo
+    });
+}
