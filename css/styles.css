@@ -1,29 +1,36 @@
 /*TODO: Fuente Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*TODO: Variables */
+/*? Variables */
 :root {
     /** Colores generales */
-    --azul: #2036B3;
-    --azul-medio: #7991ff;
-    --azul-claro: #5271FF;
-    --azul-oscuro: #10092B;
-    --blanco: #ffffff;
+    --azul: #bce2e2;
+    --celeste: #D9EAEA;
+    --blanco: #dadada;
+    --gris: #8A9FA6;
+    --gris-oscuro: #5D747C;
     --negro: #000000;
-    --negro-claro: #252525;
 
     /** Color Botones */
     --fondo-transparente: #cccccc17;
 }
 
-/*TODO Estilos generales*/
+/*? Estilos generales*/
+/*All*/
 * {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
 }
 
+/*Titulos*/
+.titulo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--blanco);
+}
+
+/*Textos*/
 p,
-.vx,
 h1,
 h2,
 h3,
@@ -36,29 +43,27 @@ h6 {
 /* Estilos para párrafos */
 p {
     font-size: 16px;
-    /* Tamaño de fuente base */
     line-height: 2;
-
-    color: #c7c7c7;
-    /* Color de texto principal, ajusta según tu diseño */
     margin-bottom: 16px;
-    /* Espaciado inferior entre párrafos */
 }
 
+/*Contenedor de imagen*/
 .container-planeta {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*Imagen flotante*/
 .planeta {
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
     width: 80%;
     animation: floatAnimation 3s infinite;
 }
 
+/*Textos azules*/
 .azul {
-    color: var(--azul-claro);
+    color: var(--azul);
 }
 
 /*TODO Botones*/
@@ -81,6 +86,7 @@ p {
     }
 }
 
+/*TODO Botones de accion*/
 .btn-cta {
     background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
@@ -97,7 +103,7 @@ p {
     }
 
     &:active {
-        background-color: var(--azul-claro);
+        background-color: var(--azul);
         border: 1px solid var(--blanco);
 
         .bi {
@@ -108,9 +114,10 @@ p {
 
 /*TODO Enlaces*/
 .navbar-nav .active {
-    background-color: var(--azul-claro);
+    background-color: var(--azul);
 }
 
+/*TODO Enlaces de footer*/
 .footer-a {
     font-size: 1.1rem;
     text-decoration: none;
@@ -118,32 +125,19 @@ p {
 
     &:hover {
         font-size: 1.2rem;
-        color: var(--azul-claro);
+        color: var(--azul);
     }
 }
 
 /*TODO Iconos*/
+/*Normales*/
 .bi {
     margin-right: 5px;
 }
 
+/*Personalizados*/
 .bix {
     font-size: 2rem;
-
-}
-
-/*TODO Titulos*/
-#titulo {
-    min-height: 10vh;
-    background-color: var(--negro);
-
-    .titulo {
-        color: var(--azul-claro);
-    }
-
-    .subtitulo {
-        color: var(--blanco);
-    }
 }
 
 /*TODO Cards*/
@@ -199,12 +193,12 @@ p {
 
 /*? -------------------------------------------*/
 
-/**Body*/
+/*TODO Body*/
 body {
     background-color: var(--negro);
 }
 
-/**Header*/
+/*TODO Header*/
 #header {
     background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
@@ -216,8 +210,6 @@ body {
 
     .navbar {
         .container-header {
-            .navbar-brand {}
-
             .navbar-toggler {
                 color: transparent !important;
                 outline: none;
@@ -241,18 +233,20 @@ body {
 
                     .nav-item {
                         .nav-link {
+                            text-transform: uppercase;
+
                             color: var(--blanco);
 
                             &:hover {
-                                color: var(--azul-claro);
+                                color: var(--azul);
                             }
 
                             &:active {
-                                color: var(--azul-claro);
+                                color: var(--azul);
                             }
 
                             &:focus {
-                                color: var(--azul-claro);
+                                color: var(--azul);
                             }
                         }
                     }
@@ -279,7 +273,7 @@ body {
     }
 }
 
-/**Hero*/
+/*TODO Hero*/
 #hero {
     min-height: 100vh;
 
@@ -320,14 +314,21 @@ body {
                     z-index: 10;
 
                     .nombre {
-                        color: var(--blanco);
+
                         font-size: 3rem;
                         font-weight: bolder;
-                        color: var(--blanco);
 
                         .apellido {
-                            color: var(--azul-medio);
+                            color: var(--blanco);
                         }
+                    }
+
+                    .puesto{
+                        font-weight: bold;
+                    }
+
+                    .servicios{
+                        text-transform: uppercase;
                     }
 
                 }
@@ -372,7 +373,7 @@ body {
     background-position: center;
 }
 
-/**Sobre*/
+/*TODO Sobre*/
 #sobre {
     min-height: 100vh;
     background-image: url(/imgs/fondos/3.png);
@@ -395,88 +396,93 @@ body {
     }
 }
 
+.frontend {
+    color: #61DAFB;
+    font-weight: bold;
+}
+
+/* Color para Frontend */
+.html {
+    color: #E34F26;
+    font-weight: bold;
+}
+
+/* Color para HTML */
+.css {
+    color: #267fe4;
+    font-weight: bold;
+}
+
+/* Color para CSS */
+.javascript {
+    color: #F7DF1E;
+    font-weight: bold;
+}
+
+/* Color para JavaScript */
+.experiencias {
+    color: #FF69B4;
+    font-weight: bold;
+}
+
+/* Color para Experiencias */
+
 /**Cards two*/
 #cards-two {
     background-color: var(--negro);
 }
 
-/**Habilidades*/
+/*TODO Habilidades*/
 #habilidades {
     min-height: 50vh;
 
-    background-color: var(--negro);
+    background-image: url(/imgs/fondo-habilidades.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    .container-progres {
-        .row-progres {
-            .columna-uno {
-
-                /* Estilos para la barra de progreso HTML5 */
-                .html-progress {
-                    background-color: #e34c26;
-                    /* Color característico de HTML5 */
-                }
-
-                /* Estilos para la barra de progreso CSS3 */
-                .css-progress {
-                    background-color: #2965f1;
-                    /* Color característico de CSS3 */
-                }
-
-                /* Estilos para la barra de progreso JavaScript */
-                .js-progress {
-                    background-color: #f7df1e;
-                    /* Color característico de JavaScript */
-                }
-            }
-
-            .columna-dos {
-
-                /* Estilos para la barra de progreso Laravel */
-                .laravel-progress {
-                    background-color: #ff2d20;
-                    /* Color característico de Laravel */
-                }
-
-                /* Estilos para la barra de progreso Vue.js */
-                .bootstrap {
-                    background-color: #9641b8;
-                    /* Color característico de Vue.js */
-                }
-
-                /* Estilos para la barra de progreso SQL */
-                .sql-progress {
-                    background-color: #336791;
-                    /* Color característico de SQL */
-                }
-            }
-        }
-    }
 }
 
-/**Servicios*/
+/* Estilos para las barras de progreso tipo glass */
+.glass-progress {
+    background-color: var(--fondo-transparente);
+    border-radius: 0px !important;
+}
+
+/*Barra de progreso*/
+.progress-bar {
+    background-color: rgba(145, 145, 145, 0.322);
+    border: 1px solid var(--blanco);
+}
+
+.titulo-html, .titulo-css, .titulo-js, .titulo-sql, .titulo-laravel, .titulo-bootstrap{
+    font-weight: bold;
+}
+
+/*TODO Servicios*/
 #servicios {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/4.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-/**Proyectos*/
+/*TODO Proyectos*/
 #proyectos {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/1.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .proyecto {
@@ -545,26 +551,28 @@ body {
     /* Ajusta el color del texto según tus necesidades */
 }
 
-/**Testimonios*/
+/*TODO Testimonios*/
 #testimonios {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/2.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /**Blog*/
 #blog {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/3.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /**Contacto*/
@@ -573,13 +581,14 @@ input {
 }
 
 #contacto {
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/imgs/fondos/4.png);
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* Estilos para los inputs con efecto glass */
