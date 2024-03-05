@@ -512,6 +512,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .badge{
@@ -530,6 +531,10 @@ body {
 
 .bg-js{
     background-color: #F7DF1E;
+}
+
+.bg-bootstrap{
+    background-color: #9a3cf3;
 }
 
 .titulo-proyecto {
