@@ -306,11 +306,11 @@ body {
                         }
                     }
 
-                    .puesto{
+                    .puesto {
                         font-weight: bold;
                     }
 
-                    .servicios{
+                    .servicios {
                         text-transform: uppercase;
                     }
 
@@ -440,7 +440,12 @@ body {
     border: 1px solid var(--blanco);
 }
 
-.titulo-html, .titulo-css, .titulo-js, .titulo-sql, .titulo-laravel, .titulo-bootstrap{
+.titulo-html,
+.titulo-css,
+.titulo-js,
+.titulo-sql,
+.titulo-laravel,
+.titulo-bootstrap {
     font-weight: bold;
 }
 
@@ -468,12 +473,63 @@ body {
     flex-direction: column;
 }
 
+/* Estilo para los botones de las pestañas */
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    margin: 0 10px;
+    background-color: var(--gris);
+    /* Cambia el color de fondo según tus preferencias */
+    color: var(--blanco);
+    /* Cambia el color del texto según tus preferencias */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón activo */
+.nav-tabs .nav-link.active {
+    background-color: var(--azul);
+    /* Cambia el color de fondo cuando está activo */
+    color: var(--blanco);
+    /* Cambia el color del texto cuando está activo */
+}
+
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
 .proyecto {
     position: relative;
     overflow: hidden;
     border: none;
     height: 200px;
     /* Puedes ajustar los bordes según tus necesidades */
+}
+
+.contenedor-badges{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-html{
+    background-color: #E34F26;
+}
+
+.bg-css{
+    background-color: #267fe4;
+}
+
+.bg-js{
+    background-color: #F7DF1E;
 }
 
 .titulo-proyecto {
@@ -546,19 +602,7 @@ body {
     flex-direction: column;
 }
 
-/**Blog*/
-#blog {
-    min-height: 100vh;
-    background-image: url(/imgs/fondos/3.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/**Contacto*/
+/*TODO Contacto*/
 input {
     color: #fff !important;
 }
@@ -583,8 +627,10 @@ input {
 }
 
 .form-control:focus {
-    border-color: rgb(163, 163, 163); /* Cambia el color del contorno al hacer clic */
-    box-shadow: 0 0 0 0.25rem rgba(150, 150, 150, 0.466); /* Cambia la sombra al hacer clic */
+    border-color: rgb(163, 163, 163);
+    /* Cambia el color del contorno al hacer clic */
+    box-shadow: 0 0 0 0.25rem rgba(150, 150, 150, 0.466);
+    /* Cambia la sombra al hacer clic */
 }
 
 .glass:focus {
@@ -605,7 +651,7 @@ input {
     /* Cambio de color del placeholder al enfocar */
 }
 
-/**News*/
+/*TODO News*/
 #news {
     min-height: 30vh;
     display: flex;
@@ -660,7 +706,7 @@ input {
     /* Espaciado a la derecha del ícono */
 }
 
-/**Footer*/
+/*TODO Footer*/
 #footer {
     min-height: 80vh;
     background-color: var(--gris-oscuro);
@@ -675,6 +721,7 @@ input {
     text-decoration: none;
     transition: all ease-in-out 300ms;
     color: var(--azul);
+
     &:hover {
         font-size: 1.2rem;
         color: var(--azul);
@@ -687,7 +734,7 @@ input {
     color: var(--azul);
 }
 
-.bixe{
+.bixe {
     color: var(--azul);
 }
 
