@@ -4,11 +4,11 @@
 /*? Variables */
 :root {
     /** Colores generales */
-    --azul: #bce2e2;
+    --azul: #8A9FA6;
     --celeste: #D9EAEA;
     --blanco: #dadada;
-    --gris: #8A9FA6;
-    --gris-oscuro: #5D747C;
+    --gris: #575757;
+    --gris-oscuro: #1f1f1f;
     --negro: #000000;
 
     /** Color Botones */
@@ -117,27 +117,10 @@ p {
     background-color: var(--azul);
 }
 
-/*TODO Enlaces de footer*/
-.footer-a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: all ease-in-out 300ms;
-
-    &:hover {
-        font-size: 1.2rem;
-        color: var(--azul);
-    }
-}
-
 /*TODO Iconos*/
 /*Normales*/
 .bi {
     margin-right: 5px;
-}
-
-/*Personalizados*/
-.bix {
-    font-size: 2rem;
 }
 
 /*TODO Cards*/
@@ -593,12 +576,15 @@ input {
 
 /* Estilos para los inputs con efecto glass */
 .glass {
-    border: 1px solid #fff;
-    /* Línea inferior */
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Fondo con transparencia */
-    color: white;
-    /* Color del texto */
+    background-color: var(--fondo-transparente);
+    color: var(--blanco) !important;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: rgb(163, 163, 163); /* Cambia el color del contorno al hacer clic */
+    box-shadow: 0 0 0 0.25rem rgba(150, 150, 150, 0.466); /* Cambia la sombra al hacer clic */
 }
 
 .glass:focus {
@@ -622,7 +608,6 @@ input {
 /**News*/
 #news {
     min-height: 30vh;
-    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,7 +620,6 @@ input {
 }
 
 .container-news {
-    border: 1px solid var(--blanco);
     background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
     padding: 2rem;
@@ -679,10 +663,32 @@ input {
 /**Footer*/
 #footer {
     min-height: 80vh;
-    background-color: var(--negro-claro);
+    background-color: var(--gris-oscuro);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/** Enlaces de footer*/
+.footer-a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+    color: var(--azul);
+    &:hover {
+        font-size: 1.2rem;
+        color: var(--azul);
+    }
+}
+
+/*Iconos personalizados*/
+.bix {
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.bixe{
+    color: var(--azul);
 }
 
 /*TODO Media Querys*/
