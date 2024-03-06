@@ -1,0 +1,128 @@
+<script>
+    // Importando scroll reveal
+    import ScrollReveal from "scrollreveal";
+
+    // Importando Swiper
+    import Swiper from "swiper";
+
+    // Inicializar ScrollReveal
+    const sr = ScrollReveal({
+        origin: "bottom", // Desde la parte inferior
+        distance: "20px", // Distancia de revelación
+        duration: 2000, // Duración de la animación
+        delay: 300, // Retraso antes de la animación
+    });
+
+    // Revelar elementos del hero
+    sr.reveal("#hero .container-texto-hero", {
+        origin: "left", // Desde la izquierda
+    });
+    sr.reveal("#hero .container-planeta", {
+        origin: "right", // Desde la derecha
+    });
+
+    // Revelar elementos de la sección "Cards"
+    sr.reveal("#cards-one .card", {
+        origin: "bottom", // Desde la parte inferior
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre la animación de cada tarjeta
+    });
+
+    // Revelar elementos de la sección "Mi Bio"
+    sr.reveal("#sobre .contenedor-texto-sobre", {
+        origin: "left", // Desde la izquierda
+        distance: "20px", // Distancia de revelación
+    });
+    sr.reveal("#sobre img", {
+        origin: "right", // Desde la derecha
+        distance: "20px", // Distancia de revelación
+    });
+
+    // Revelar elementos de la sección "Servicios"
+    sr.reveal("#servicios .card", {
+        origin: "bottom", // Desde la parte inferior
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre la animación de cada tarjeta
+    });
+
+    // Revelar elementos de la sección "Proyectos"
+    sr.reveal("#proyectos .tab-content", {
+        origin: "bottom", // Desde la parte inferior
+        distance: "20px", // Distancia de revelación
+    });
+
+    // Revelar elementos de la sección "Blog"
+    sr.reveal("#blog .card", {
+        origin: "bottom", // Desde la parte inferior
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre cada elemento
+    });
+
+    // Revelar elementos de la sección "Contacto"
+    sr.reveal("#contacto .col-md-6", {
+        origin: "left", // Desde la izquierda
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre cada elemento
+    });
+    sr.reveal("#contacto form", {
+        origin: "right", // Desde la derecha
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre cada elemento
+    });
+
+    // Revelar elementos de la sección "News"
+    sr.reveal("#news h6", {
+        origin: "left", // Desde la izquierda
+        distance: "20px", // Distancia de revelación
+    });
+    sr.reveal("#news h2", {
+        origin: "bottom", // Desde abajo
+        distance: "20px", // Distancia de revelación
+    });
+    sr.reveal("#news h6:last-of-type", {
+        origin: "right", // Desde la derecha
+        distance: "20px", // Distancia de revelación
+    });
+    sr.reveal("#news .content-input", {
+        origin: "bottom", // Desde abajo
+        distance: "20px", // Distancia de revelación
+    });
+
+    // Revelar elementos de la sección "Footer"
+    sr.reveal("#footer .col-md-3", {
+        origin: "bottom", // Desde abajo
+        distance: "20px", // Distancia de revelación
+        interval: 200, // Intervalo entre cada columna
+    });
+
+    // Este evento se dispara cuando el DOM ha sido completamente cargado
+    document.addEventListener("DOMContentLoaded", function () {
+        // Inicializar Swiper para la nueva sección de tarjetas con diseño diferente
+        const miSwiper = new Swiper(".miSwiper", {
+            // Definir la cantidad de tarjetas visibles de forma automática
+            slidesPerView: "auto",
+            // Espacio entre tarjetas
+            spaceBetween: 10,
+            // Configuración de navegación con botones siguiente y anterior
+            navigation: {
+                nextEl: ".swiper-button-next", // Selector del botón siguiente
+                prevEl: ".swiper-button-prev", // Selector del botón anterior
+            },
+            // Configuración de breakpoints para cambiar la cantidad de tarjetas visibles en diferentes tamaños de pantalla
+            breakpoints: {
+                // Pantallas pequeñas: 576px o más
+                576: {
+                    slidesPerView: 1.5, // Mostrar una tarjeta por pantalla
+                },
+                // Pantallas medianas: 768px o más
+                768: {
+                    slidesPerView: 2.5, // Mostrar dos tarjetas por pantalla
+                },
+                // Pantallas grandes: 992px o más
+                992: {
+                    slidesPerView: 3.5, // Mostrar tres tarjetas por pantalla
+                },
+            },
+        });
+    });
+</script>
