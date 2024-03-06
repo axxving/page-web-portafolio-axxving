@@ -28,6 +28,13 @@
     font-size: 1rem;
 }
 
+.icon-circle{
+    padding: 10px 15px;
+    background-color: var(--gris);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
 /*Titulos*/
 .titulo {
     text-transform: uppercase;
