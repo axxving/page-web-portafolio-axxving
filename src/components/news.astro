@@ -1,0 +1,95 @@
+<!--TODO News -->
+<section class="container-fluid pt-5 pb-5" id="news">
+    <div class="container container-news">
+        <div class="row">
+            <!-- Columna izquierda con título pequeño, título grande y título pequeño -->
+            <div class="col-md-6">
+                <h6>¡Suscríbete a nuestro newsletter!</h6>
+                <h2>Recibe las últimas actualizaciones</h2>
+                <h6>Mantente al tanto de nuestras novedades</h6>
+            </div>
+            <!-- Columna derecha con formulario de suscripción -->
+            <div class="col-md-6 content-input mt-2">
+                <form class="row g-3 align-items-center">
+                    <!-- Input para el correo electrónico con icono -->
+                    <div class="col-auto">
+                        <div class="input-group">
+                            <input
+                                type="email"
+                                class="form-control glass"
+                                id="email"
+                                placeholder="Tu correo electrónico"
+                                aria-label="Tu correo electrónico"
+                                aria-describedby="button-addon2"
+                            />
+                            <button
+                                class="btn btn-outline-primary glass-button"
+                                type="button"
+                                id="button-addon2"
+                                ><i class="bi bi-envelope"></i></button
+                            >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--TODO News -->
+<style>
+    /*TODO News*/
+    #news {
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-news {
+        background-color: var(--fondo-transparente);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 5px;
+    }
+
+    /* Estilos glass para el botón */
+    .glass-button {
+        background: rgba(255, 255, 255, 0.2);
+        /* Fondo transparente */
+        backdrop-filter: blur(10px);
+        /* Efecto de desenfoque */
+        border: none;
+        /* Sin bordes */
+        border-radius: 8px;
+        /* Bordes redondeados */
+        color: #ffffff;
+        /* Color del texto */
+        padding: 10px 15px;
+        /* Espaciado interno */
+        cursor: pointer;
+
+        /* Cursor al pasar sobre el botón */
+        &:hover {
+            background-color: #e7e7e7ce;
+            color: var(--blanco);
+        }
+
+        &:active {
+            background-color: #000000ce !important;
+            color: var(--blanco) !important;
+        }
+    }
+
+    /* Estilo para el ícono dentro del botón */
+    .glass-button i {
+        margin-right: 5px;
+        /* Espaciado a la derecha del ícono */
+    }
+</style>
