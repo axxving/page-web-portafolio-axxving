@@ -1,31 +1,54 @@
-# ¡Bienvenido a mi Portafolio Web!
+# Astro Starter Kit: Basics
 
-¡Hola! Soy Axxving, un desarrollador web apasionado por crear soluciones digitales innovadoras. Este repositorio contiene una colección de proyectos que muestran mis habilidades en desarrollo front-end, diseño responsivo y más.
+```sh
+npm create astro@latest -- --template basics
+```
 
-## Proyectos Destacados
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-- **Proyecto 1:** Breve descripción del proyecto 1.
-- **Proyecto 2:** Breve descripción del proyecto 2.
-- **Proyecto 3:** Breve descripción del proyecto 3.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Tecnologías Utilizadas
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-- HTML5
-- CSS3
-- JavaScript
-- Laravel
+## 🚀 Project Structure
 
-## Cómo Explorar
+Inside of your Astro project, you'll see the following folders and files:
 
-1. Navega a través de los diferentes directorios para explorar proyectos específicos.
-2. Lee los archivos `README.md` de cada proyecto para obtener detalles sobre su desarrollo y funcionamiento.
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## Contacto
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-¡Si quieres colaborar en algún proyecto o simplemente quieres ponerte en contacto, no dudes en hacerlo!
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-- Correo Electrónico: ihernandezramirez800@gmail.com
-- LinkedIn: [linkedin.com/in/tu_perfil_linkedin]
-- Sitio Web: [tu_sitio_web.com]
+Any static assets, like images, can be placed in the `public/` directory.
 
-¡Gracias por visitar mi portafolio! Espero que encuentres interesantes mis proyectos.
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
