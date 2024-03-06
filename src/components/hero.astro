@@ -30,7 +30,7 @@
                         </p>
 
                         <!-- Subtítulo -->
-                        <h5 class="mb-3 servicios">Servicios</h5>
+                        <h5 class="mb-3 texto-servicios">Contactame</h5>
 
                         <!-- Botones con iconos -->
                         <div class="d-flex align-items-center">
@@ -121,8 +121,9 @@
                             font-weight: bold;
                         }
 
-                        .servicios {
+                        .texto-servicios {
                             text-transform: uppercase;
+                            color: var(--blanco);
                         }
                     }
 
@@ -153,5 +154,28 @@
         background: linear-gradient(to top, rgb(1, 1, 1), rgba(0, 0, 0, 0));
         pointer-events: none;
         z-index: 10;
+    }
+
+    .btn-whatsapp {
+        border: 1px solid var(--whatsapp) !important;
+        color: var(--whatsapp) !important;
+
+        .bi-whatsapp {
+            color: var(--whatsapp) !important;
+        }
+
+        &:hover {
+            border: 1px solid var(--whatsapp) !important;
+            background-color: var(--whatsapp) !important;
+            color: var(--blanco) !important;
+            .bi-whatsapp {
+                color: var(--blanco) !important;
+            }
+        }
+
+        &:active {
+            border: 1px solid var(--whatsapp) !important;
+            background-color: var(--whatsapp) !important;
+        }
     }
 </style>

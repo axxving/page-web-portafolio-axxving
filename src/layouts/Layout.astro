@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <!--Lenguaje de la pagina-->
 <html lang="es">
 	<!-- Cabecera -->
@@ -22,6 +22,12 @@ const { title } = Astro.props;
 			rel="shortcut icon"
 			href="/public/imgs/logo.png"
 			type="image/x-icon"
+		/>
+
+		<!-- Font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		/>
 
 		<!-- Iconos de boxicons -->
@@ -56,10 +62,10 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	/*TODO: Fuente Poppins*/
+	/* Fuente Poppins*/
 	@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-	/*? Variables */
+	/* Variables */
 	:root {
 		/** Colores generales */
 		--azul: #8a9fa6;
@@ -79,14 +85,13 @@ const { title } = Astro.props;
 		--fondo-transparente: #cccccc17;
 	}
 
-	/*? Estilos generales*/
 	/*All*/
 	* {
-
 		font-family: "Poppins", sans-serif;
 		font-size: 1rem;
 	}
 
+	/* Icono de red social */
 	.icon-circle {
 		padding: 10px 15px;
 		background-color: var(--gris);
@@ -100,6 +105,7 @@ const { title } = Astro.props;
 		color: var(--blanco) !important;
 	}
 
+	/* Enlaces */
 	a {
 		text-decoration: none !important;
 	}
@@ -113,12 +119,6 @@ const { title } = Astro.props;
 	h5,
 	h6 {
 		color: var(--blanco);
-	}
-
-	#tab1-tab,
-	#tab2-tab,
-	#tab3-tab {
-		margin-bottom: 10px;
 	}
 
 	/* Estilos para párrafos */
@@ -168,6 +168,10 @@ const { title } = Astro.props;
 		}
 	}
 
+	.text-center {
+		color: var(--blanco) !important;
+	}
+
 	/*TODO Botones de accion*/
 	.btn-cta {
 		background-color: var(--fondo-transparente);
@@ -191,29 +195,6 @@ const { title } = Astro.props;
 			.bi {
 				color: var(--blanco);
 			}
-		}
-	}
-
-	.btn-whatsapp {
-		border: 1px solid var(--whatsapp) !important;
-		color: var(--whatsapp);
-
-		.icono-whatsapp-header {
-			color: var(--whatsapp);
-		}
-
-		&:hover {
-			border: 1px solid var(--whatsapp) !important;
-			background-color: var(--whatsapp);
-
-			.icono-whatsapp-header {
-				color: var(--blanco);
-			}
-		}
-
-		&:active {
-			border: 1px solid var(--whatsapp) !important;
-			background-color: var(--whatsapp) !important;
 		}
 	}
 
@@ -278,7 +259,7 @@ const { title } = Astro.props;
 		color: var(--blanco) !important;
 	}
 
-	.icono-card{
+	.icono-card {
 		color: var(--blanco) !important;
 	}
 
@@ -293,8 +274,6 @@ const { title } = Astro.props;
 	body {
 		background-color: var(--negro) !important;
 	}
-
-
 
 	/*TODO Contacto*/
 	input {
