@@ -1,4 +1,4 @@
-<!-- cards two slider -->
+<!--TODO Swiper -->
 <div class="container-fluid pt-5 pb-5" id="cards-two">
     <div class="container">
         <div class="swiper miSwiper">
@@ -10,7 +10,7 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-html5 bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-html5 bx-lg mb-3"></i>
                             <!-- Título -->
                             <h5 class="card-title">HTML5</h5>
                         </div>
@@ -24,7 +24,7 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-css3 bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-css3 bx-lg mb-3"></i>
                             <!-- Título -->
                             <h5 class="card-title">CSS3</h5>
                         </div>
@@ -38,7 +38,8 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-javascript bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-javascript bx-lg mb-3"
+                            ></i>
                             <!-- Título -->
                             <h5 class="card-title">JavaScript</h5>
                         </div>
@@ -52,7 +53,8 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-bootstrap bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-bootstrap bx-lg mb-3"
+                            ></i>
                             <!-- Título -->
                             <h5 class="card-title">Bootstrap</h5>
                         </div>
@@ -66,7 +68,7 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-jquery bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-jquery bx-lg mb-3"></i>
                             <!-- Título -->
                             <h5 class="card-title">jQuery</h5>
                         </div>
@@ -80,7 +82,7 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-sass bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-sass bx-lg mb-3"></i>
                             <!-- Título -->
                             <h5 class="card-title">Sass</h5>
                         </div>
@@ -94,7 +96,7 @@
                             class="card-body d-flex flex-column align-items-center"
                         >
                             <!-- Icono -->
-                            <i class="bx bxl-github bx-lg mb-3"></i>
+                            <i class="bx icono-card bxl-github bx-lg mb-3"></i>
                             <!-- Título -->
                             <h5 class="card-title">GitHub</h5>
                         </div>
@@ -104,3 +106,48 @@
         </div>
     </div>
 </div>
+
+<!--TODO Estilos -->
+<style>
+    /**Cards two*/
+    #cards-two {
+        background-color: var(--negro);
+    }
+</style>
+
+<!--TODO Scripts -->
+<script>
+    // Importando Swiper
+    import Swiper from "swiper";
+
+    // Este evento se dispara cuando el DOM ha sido completamente cargado
+    document.addEventListener("DOMContentLoaded", function () {
+        // Inicializar Swiper para la nueva sección de tarjetas con diseño diferente
+        const miSwiper = new Swiper(".miSwiper", {
+            // Definir la cantidad de tarjetas visibles de forma automática
+            slidesPerView: "auto",
+            // Espacio entre tarjetas
+            spaceBetween: 10,
+            // Configuración de navegación con botones siguiente y anterior
+            navigation: {
+                nextEl: ".swiper-button-next", // Selector del botón siguiente
+                prevEl: ".swiper-button-prev", // Selector del botón anterior
+            },
+            // Configuración de breakpoints para cambiar la cantidad de tarjetas visibles en diferentes tamaños de pantalla
+            breakpoints: {
+                // Pantallas pequeñas: 576px o más
+                576: {
+                    slidesPerView: 1.5, // Mostrar una tarjeta por pantalla
+                },
+                // Pantallas medianas: 768px o más
+                768: {
+                    slidesPerView: 2.5, // Mostrar dos tarjetas por pantalla
+                },
+                // Pantallas grandes: 992px o más
+                992: {
+                    slidesPerView: 3.5, // Mostrar tres tarjetas por pantalla
+                },
+            },
+        });
+    });
+</script>

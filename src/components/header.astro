@@ -1,4 +1,4 @@
-<!-- Header -->
+<!--TODO Header -->
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div
@@ -58,3 +58,79 @@
         </div>
     </nav>
 </header>
+
+<!--TODO Estilos -->
+<style>
+    /*TODO Header*/
+    #header {
+        background-color: var(--fondo-transparente);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+
+        .navbar {
+            .container-header {
+                .navbar-toggler {
+                    color: transparent !important;
+                    outline: none;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                        border: none;
+                    }
+
+                    .navbar-toggler-icon {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                    }
+                }
+
+                .navbar-collapse {
+                    .navbar-nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .nav-item {
+                            .nav-link {
+                                color: var(--blanco);
+
+                                &:hover {
+                                    color: var(--azul);
+                                }
+
+                                &:active {
+                                    color: var(--azul);
+                                }
+
+                                &:focus {
+                                    color: var(--azul);
+                                }
+                            }
+                        }
+
+                        .icons-nav {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row !important;
+
+                            .nav-link {
+                                .bi {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #navbarNav {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+</style>
