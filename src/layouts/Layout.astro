@@ -7,30 +7,73 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<!--Lenguaje de la pagina-->
+<html lang="es">
+	<!-- Cabecera -->
 	<head>
+		<!-- Caracteres especiales -->
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+
+		<!-- Responsivo de pantalla -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="/public/imgs/logo.png"
+			type="image/x-icon"
+		/>
+
+		<!-- Iconos de boxicons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+		/>
+
+		<!-- Nombre de la pagina -->
+		<title>Portfolio | {title}</title>
+
+		<!-- Bootstrap 5 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Iconos de Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Swiper-->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 <style is:global>
+	/*? Variables */
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		/** Colores generales */
+		--azul: #8a9fa6;
+		--celeste: #d9eaea;
+		--blanco: #dadada;
+		--gris: #575757;
+		--gris-oscuro: #1f1f1f;
+		--negro: #000000;
+
+		/**Redes sociales*/
+		--whatsapp: #30d24e;
+		--facebook: #0866ff;
+		--linkedin: #0a66c2;
+		--instagram: #eb4668;
+
+		/** Color Botones */
+		--fondo-transparente: #cccccc17;
 	}
 	html {
 		font-family: system-ui, sans-serif;

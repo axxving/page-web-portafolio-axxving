@@ -1,0 +1,47 @@
+<!-- Boton UP-->
+<a href="#hero" class="btn-up" id="boton-up">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- Estilos del boton -->
+<style>
+  /* Botones*/
+  .btn-up {
+    background-color: var(--fondo-transparente);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: -100px;
+    right: 0;
+    z-index: 1000;
+    margin: 20px;
+    border: 1px solid var(--blanco);
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+
+    /* Icono del boton */
+    .bi-arrow-up {
+      margin-right: 0px;
+      color: var(--blanco);
+    }
+  }
+</style>
+
+<!-- Script -->
+<script>
+  // Boton UP
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnUp = document.getElementById("boton-up");
+
+    window.addEventListener("scroll", function () {
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      if (scrollY >= 200) {
+        btnUp.style.bottom = "15px"; // Ajusta la posición según tus necesidades
+      } else {
+        btnUp.style.bottom = "-100px"; // Oculta el botón fuera de la pantalla
+      }
+    });
+  });
+</script>
