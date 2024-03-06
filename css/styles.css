@@ -28,7 +28,7 @@
     font-size: 1rem;
 }
 
-.icon-circle{
+.icon-circle {
     padding: 10px 15px;
     background-color: var(--gris);
     border-radius: 5px;
@@ -41,6 +41,10 @@
     color: var(--blanco);
 }
 
+a{
+    text-decoration: none !important;
+}
+
 /*Textos*/
 p,
 h1,
@@ -50,6 +54,12 @@ h4,
 h5,
 h6 {
     color: var(--blanco);
+}
+
+#tab1-tab,
+#tab2-tab,
+#tab3-tab {
+    margin-bottom: 10px;
 }
 
 /* Estilos para párrafos */
@@ -148,7 +158,7 @@ p {
     }
 }
 
-.btn-facebook{
+.btn-facebook {
     border: 1px solid var(--facebook) !important;
     color: var(--facebook);
 
@@ -171,7 +181,7 @@ p {
     }
 }
 
-.btn-linkedin{
+.btn-linkedin {
     border: 1px solid var(--linkedin) !important;
     color: var(--linkedin);
 
@@ -194,7 +204,7 @@ p {
     }
 }
 
-.btn-instagram{
+.btn-instagram {
     border: 1px solid var(--instagram) !important;
     color: var(--instagram);
 
@@ -236,6 +246,7 @@ p {
 /*TODO Cards*/
 .card {
     background-color: transparent;
+    margin-bottom: 20px;
 }
 
 .glass-card {
