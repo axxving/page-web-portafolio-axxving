@@ -94,9 +94,9 @@ const { title } = Astro.props;
 	/* Icono de red social */
 	.icon-circle {
 		padding: 10px 15px;
-		background-color: var(--gris);
-		border-radius: 5px;
-		margin-right: 20px;
+		background-color: var(--gris) !important;
+		border-radius: 5px !important;
+		margin-right: 20px !important;
 	}
 
 	/*Titulos*/
@@ -147,55 +147,8 @@ const { title } = Astro.props;
 		color: var(--azul);
 	}
 
-	/*TODO Botones*/
-	.btn-up {
-		background-color: var(--fondo-transparente);
-		backdrop-filter: blur(10px);
-		border-radius: 5px;
-		padding: 10px 15px;
-		position: fixed;
-		bottom: -100px;
-		right: 0;
-		z-index: 1000;
-		margin: 20px;
-		border: 1px solid var(--blanco);
-		cursor: pointer;
-		transition: bottom 0.3s ease;
-
-		.bi-arrow-up {
-			margin-right: 0px;
-			color: var(--blanco);
-		}
-	}
-
 	.text-center {
 		color: var(--blanco) !important;
-	}
-
-	/*TODO Botones de accion*/
-	.btn-cta {
-		background-color: var(--fondo-transparente);
-		backdrop-filter: blur(10px);
-		border: 1px solid var(--blanco);
-		color: var(--blanco);
-
-		&:hover {
-			background-color: var(--blanco);
-			color: var(--negro);
-
-			.bi {
-				color: var(--negro) !important;
-			}
-		}
-
-		&:active {
-			background-color: var(--azul);
-			border: 1px solid var(--blanco);
-
-			.bi {
-				color: var(--blanco);
-			}
-		}
 	}
 
 	/*TODO Enlaces*/

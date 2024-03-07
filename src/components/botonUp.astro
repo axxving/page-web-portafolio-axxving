@@ -3,6 +3,30 @@
   <i class="bi bi-arrow-up"></i>
 </a>
 
+<!--TODO Estilos -->
+<style>
+  /*TODO Botones*/
+  .btn-up {
+    background-color: var(--fondo-transparente);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: -100px;
+    right: 0;
+    z-index: 1000;
+    margin: 20px;
+    border: 1px solid var(--blanco);
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+
+    .bi-arrow-up {
+      margin-right: 0px;
+      color: var(--blanco);
+    }
+  }
+</style>
+
 <!--TODO Script -->
 <script>
   // Boton UP

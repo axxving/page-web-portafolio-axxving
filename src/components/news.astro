@@ -23,7 +23,7 @@
                                 aria-describedby="button-addon2"
                             />
                             <button
-                                class="btn btn-outline-primary glass-button"
+                                class="btn btn-outline-secondary glass-button"
                                 type="button"
                                 id="button-addon2"
                                 ><i class="bi bi-envelope"></i></button
@@ -41,6 +41,9 @@
     /*TODO News*/
     #news {
         min-height: 30vh;
+        background-image: url(/imgs/fondos/fondo-news.png);
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,39 +60,13 @@
         backdrop-filter: blur(10px);
         padding: 2rem;
         border-radius: 5px;
+        color: var(--blanco) !important;
     }
 
-    /* Estilos glass para el botón */
-    .glass-button {
-        background: rgba(255, 255, 255, 0.2);
-        /* Fondo transparente */
-        backdrop-filter: blur(10px);
-        /* Efecto de desenfoque */
-        border: none;
-        /* Sin bordes */
-        border-radius: 8px;
-        /* Bordes redondeados */
-        color: #ffffff;
-        /* Color del texto */
-        padding: 10px 15px;
-        /* Espaciado interno */
-        cursor: pointer;
-
-        /* Cursor al pasar sobre el botón */
-        &:hover {
-            background-color: #e7e7e7ce;
-            color: var(--blanco);
-        }
-
-        &:active {
-            background-color: #000000ce !important;
-            color: var(--blanco) !important;
-        }
-    }
-
-    /* Estilo para el ícono dentro del botón */
-    .glass-button i {
-        margin-right: 5px;
-        /* Espaciado a la derecha del ícono */
+    .form-control:focus {
+        border-color: rgb(163, 163, 163);
+        /* Cambia el color del contorno al hacer clic */
+        box-shadow: 0 0 0 0.25rem rgba(150, 150, 150, 0.466);
+        /* Cambia la sombra al hacer clic */
     }
 </style>
