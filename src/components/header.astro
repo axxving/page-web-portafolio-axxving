@@ -1,28 +1,14 @@
-<!--TODO Header -->
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div
-            class="container container-header d-flex justify-content-between align-items-center"
-        >
-            <!-- Logo -->
+        <div class="container container-header d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
                 <img width="50" src="/imgs/logo.png" alt="Logo" />
             </a>
 
-            <!-- Botón de hamburguesa para pantallas pequeñas -->
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menú de navegación sin íconos centrado -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -43,25 +29,22 @@
                 </ul>
             </div>
 
-            <!-- Botones de redes sociales a la derecha, ocultos en pantallas pequeñas -->
             <div class="d-none d-lg-flex">
-                <button class="btn btn-outline-secondary btn-facebook me-2"
-                    ><i class="bi bip bi-facebook"></i></button
-                >
-                <button class="btn btn-outline-secondary btn-linkedin me-2"
-                    ><i class="bi bip bi-linkedin"></i></button
-                >
-                <button class="btn btn-outline-secondary btn-instagram"
-                    ><i class="bi bip bi-instagram"></i></button
-                >
+                <button class="btn btn-outline-secondary btn-facebook me-2">
+                    <i class="bi bip bi-facebook"></i>
+                </button>
+                <button class="btn btn-outline-secondary btn-linkedin me-2">
+                    <i class="bi bip bi-linkedin"></i>
+                </button>
+                <button class="btn btn-outline-secondary btn-instagram">
+                    <i class="bi bip bi-instagram"></i>
+                </button>
             </div>
         </div>
     </nav>
 </header>
 
-<!--TODO Estilos -->
 <style>
-    /*TODO Header*/
     #header {
         background-color: var(--fondo-transparente);
         backdrop-filter: blur(10px);
@@ -70,67 +53,51 @@
         top: 0;
         z-index: 1000;
         transition: transform 0.3s ease-in-out;
+    }
 
-        .navbar {
-            .container-header {
-                .navbar-toggler {
-                    color: transparent !important;
-                    outline: none;
-                    border: none;
+    .navbar .container-header .navbar-toggler {
+        color: transparent !important;
+        outline: none;
+        border: none;
+    }
 
-                    &:focus {
-                        outline: none;
-                        border: none;
-                    }
+    .navbar .container-header .navbar-toggler:focus {
+        outline: none;
+        border: none;
+    }
 
-                    .navbar-toggler-icon {
-                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-                    }
-                }
+    .navbar .container-header .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
 
-                .navbar-collapse {
-                    .navbar-nav {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+    .navbar .container-header .navbar-collapse .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-                        .nav-item {
-                            .nav-link {
-                                color: var(--blanco);
+    .navbar .container-header .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: var(--blanco);
+    }
 
-                                &:hover {
-                                    color: var(--azul);
-                                }
+    .navbar .container-header .navbar-collapse .navbar-nav .nav-item .nav-link:hover,
+    .navbar .container-header .navbar-collapse .navbar-nav .nav-item .nav-link:active,
+    .navbar .container-header .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+        color: var(--azul);
+    }
 
-                                &:active {
-                                    color: var(--azul);
-                                }
+    .navbar .container-header .navbar-collapse .icons-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row !important;
+    }
 
-                                &:focus {
-                                    color: var(--azul);
-                                }
-                            }
-                        }
+    .navbar .container-header .navbar-collapse .icons-nav .nav-link .bi {
+        font-size: 1.2rem;
+    }
 
-                        .icons-nav {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: row !important;
-
-                            .nav-link {
-                                .bi {
-                                    font-size: 1.2rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                #navbarNav {
-                    padding-left: 10px;
-                }
-            }
-        }
+    .navbar .container-header #navbarNav {
+        padding-left: 10px;
     }
 </style>

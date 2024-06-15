@@ -1,103 +1,65 @@
-<!--TODO Swiper -->
 <div class="container-fluid pt-5 pb-5" id="cards-two">
     <div class="container">
         <div class="swiper miSwiper">
             <div class="swiper-wrapper">
-                <!--tarjeta 1-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <i class="bx icono-card bxl-html5 bx-lg mb-3"></i>
-                            <!-- Título -->
                             <h5 class="card-title">HTML5</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 2-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <i class="bx icono-card bxl-css3 bx-lg mb-3"></i>
-                            <!-- Título -->
                             <h5 class="card-title">CSS3</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 3-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
-                            <i class="bx icono-card bxl-javascript bx-lg mb-3"
-                            ></i>
-                            <!-- Título -->
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <i class="bx icono-card bxl-javascript bx-lg mb-3"></i>
                             <h5 class="card-title">JavaScript</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 4-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
-                            <i class="bx icono-card bxl-bootstrap bx-lg mb-3"
-                            ></i>
-                            <!-- Título -->
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <i class="bx icono-card bxl-bootstrap bx-lg mb-3"></i>
                             <h5 class="card-title">Bootstrap</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 5-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <i class="bx icono-card bxl-jquery bx-lg mb-3"></i>
-                            <!-- Título -->
                             <h5 class="card-title">jQuery</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 6-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <i class="bx icono-card bxl-sass bx-lg mb-3"></i>
-                            <!-- Título -->
                             <h5 class="card-title">Sass</h5>
                         </div>
                     </div>
                 </div>
 
-                <!--tarjeta 7-->
                 <div class="swiper-slide">
                     <div class="card glass-card text-center">
-                        <div
-                            class="card-body d-flex flex-column align-items-center"
-                        >
-                            <!-- Icono -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <i class="bx icono-card bxl-github bx-lg mb-3"></i>
-                            <!-- Título -->
                             <h5 class="card-title">GitHub</h5>
                         </div>
                     </div>
@@ -107,45 +69,32 @@
     </div>
 </div>
 
-<!--TODO Estilos -->
 <style>
-    /**Cards two*/
     #cards-two {
         background-color: var(--negro);
     }
 </style>
 
-<!--TODO Scripts -->
 <script>
-    // Importando Swiper
     import Swiper from "swiper";
 
-    // Este evento se dispara cuando el DOM ha sido completamente cargado
     document.addEventListener("DOMContentLoaded", function () {
-        // Inicializar Swiper para la nueva sección de tarjetas con diseño diferente
         const miSwiper = new Swiper(".miSwiper", {
-            // Definir la cantidad de tarjetas visibles de forma automática
             slidesPerView: "auto",
-            // Espacio entre tarjetas
             spaceBetween: 10,
-            // Configuración de navegación con botones siguiente y anterior
             navigation: {
-                nextEl: ".swiper-button-next", // Selector del botón siguiente
-                prevEl: ".swiper-button-prev", // Selector del botón anterior
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            // Configuración de breakpoints para cambiar la cantidad de tarjetas visibles en diferentes tamaños de pantalla
             breakpoints: {
-                // Pantallas pequeñas: 576px o más
                 576: {
-                    slidesPerView: 1.5, // Mostrar una tarjeta por pantalla
+                    slidesPerView: 1.5,
                 },
-                // Pantallas medianas: 768px o más
                 768: {
-                    slidesPerView: 2.5, // Mostrar dos tarjetas por pantalla
+                    slidesPerView: 2.5,
                 },
-                // Pantallas grandes: 992px o más
                 992: {
-                    slidesPerView: 3.5, // Mostrar tres tarjetas por pantalla
+                    slidesPerView: 3.5,
                 },
             },
         });

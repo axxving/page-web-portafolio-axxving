@@ -1,8 +1,7 @@
-<!--TODO Sobre -->
 <div class="container-fluid pt-5 pb-5" id="sobre">
     <div class="col text-center pb-3">
-        <h6 class="azul">EXPLORA COMO SIGO</h6>
-        <h2 class="subtitulo">TRANSFORMANDO IDEAS EN CÓDIGO</h2>
+        <h6 class="azul">Ejemplo Título</h6>
+        <h2 class="subtitulo">Ejemplo Subtítulo</h2>
     </div>
 
     <div class="container container-sobre">
@@ -11,56 +10,44 @@
                 <img
                     width="400"
                     src="/imgs/ilustraciones/5.png"
-                    alt="Imagen"
+                    alt="Imagen de ejemplo"
                     class="planeta"
                 />
             </div>
             <div class="col-md-6 mt-3 mb-3 contenedor-texto-sobre">
-                <h2 class="pb-3 titulo">Descubre más sobre Mí</h2>
+                <h2 class="pb-3 titulo">Descubre más sobre el Proyecto</h2>
 
                 <p>
-                    Soy un desarrollador <span class="frontend">Frontend</span> apasionado
-                    por crear experiencias web cautivadoras y funcionales. Mi enfoque
-                    principal radica en la implementación de diseños atractivos y
-                    accesibles que mejoren la usabilidad y la interactividad del
-                    usuario. Con experiencia en <span class="html">HTML</span>, <span
-                        class="css">CSS</span
-                    >
-                    y <span class="javascript">JavaScript</span>, disfruto
-                    transformando conceptos creativos en interfaces visuales
-                    dinámicas y receptivas. ¡Siempre buscando aprender y
-                    explorar nuevas tecnologías para llevar las <span
-                        class="experiencias">experiencias</span
-                    > digitales al siguiente nivel!
+                    Este es un <span class="frontend">proyecto de ejemplo</span> diseñado
+                    para mostrar cómo se pueden crear experiencias web cautivadoras y funcionales. El enfoque
+                    principal es la implementación de diseños atractivos y accesibles que mejoren la usabilidad y la interactividad del
+                    usuario. Con tecnologías como <span class="html">HTML</span>, <span class="css">CSS</span>
+                    y <span class="javascript">JavaScript</span>, este proyecto transforma conceptos creativos en interfaces visuales
+                    dinámicas y receptivas. ¡Siempre buscando innovar y explorar nuevas tecnologías para llevar las <span class="experiencias">experiencias</span>
+                    digitales al siguiente nivel!
                 </p>
                 <button class="btn btn-outline-success mt-3">
-                    <i class="bi bi-download me-2"></i> Descargar CV
+                    <i class="bi bi-download me-2"></i> Descargar Ejemplo
                 </button>
             </div>
         </div>
     </div>
 </div>
 
-<!--TODO Estilos -->
 <style>
-    /*TODO Sobre*/
     #sobre {
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
 
-        .container-sobre {
-            .row-sobre {
-                .contenedor-texto-sobre {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-            }
-        }
+    .container-sobre .row-sobre .contenedor-texto-sobre {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .subtitulo {
@@ -72,27 +59,36 @@
         font-weight: bold;
     }
 
-    /* Color para Frontend */
     .html {
         color: #e34f26;
         font-weight: bold;
     }
 
-    /* Color para HTML */
     .css {
         color: #267fe4;
         font-weight: bold;
     }
 
-    /* Color para CSS */
     .javascript {
         color: #f7df1e;
         font-weight: bold;
     }
 
-    /* Color para JavaScript */
     .experiencias {
         color: #ff69b4;
         font-weight: bold;
     }
 </style>
+
+<script>
+  import VanillaTilt from "vanilla-tilt";
+
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    VanillaTilt.init(document.querySelector(".container-planeta img"), {
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.3,
+    });
+  }
+</script>

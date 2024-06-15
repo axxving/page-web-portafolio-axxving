@@ -1,54 +1,35 @@
-<!--TODO Cards -->
 <section class="container-fluid pt-5 pb-5" id="cards-one">
   <div class="container">
     <div class="row justify-content-center">
-      <!-- Primera card -->
       <div class="col-lg-4">
         <div class="card text-center glass-card mb-3" id="card1">
           <div class="card-body">
-            <!-- Icono -->
-            <i class="bi icono-card bi-speedometer2" style="font-size: 3rem;"
-            ></i>
-            <!-- Título -->
-            <h5 class="card-title mt-3">Rápido y Eficiente</h5>
-            <!-- Párrafo -->
+            <i class="bi icono-card bi-speedometer2" style="font-size: 3rem;"></i>
+            <h5 class="card-title mt-3">Ejemplo Rápido</h5>
             <p class="card-text">
-              Desarrollo sitios web rápidos y eficientes, optimizados para un
-              rendimiento excepcional.
+              Este es un ejemplo de un sitio web rápido y eficiente.
             </p>
           </div>
         </div>
       </div>
-
-      <!-- Segunda card -->
       <div class="col-lg-4">
         <div class="card text-center glass-card mb-3" id="card2">
           <div class="card-body">
-            <!-- Icono -->
             <i class="bi icono-card bi-palette" style="font-size: 3rem;"></i>
-            <!-- Título -->
-            <h5 class="card-title mt-3">Diseños Creativos</h5>
-            <!-- Párrafo -->
+            <h5 class="card-title mt-3">Ejemplo Creativo</h5>
             <p class="card-text">
-              Creación de diseños atractivos y modernos que destacan por su
-              creatividad y originalidad.
+              Este es un ejemplo de diseño atractivo y moderno.
             </p>
           </div>
         </div>
       </div>
-
-      <!-- Tercera card -->
       <div class="col-lg-4">
         <div class="card text-center glass-card mb-3" id="card3">
           <div class="card-body">
-            <!-- Icono -->
             <i class="bi icono-card bi-code-slash" style="font-size: 3rem;"></i>
-            <!-- Título -->
-            <h5 class="card-title mt-3">Código Limpio</h5>
-            <!-- Párrafo -->
+            <h5 class="card-title mt-3">Código de Ejemplo</h5>
             <p class="card-text">
-              Escritura de código limpio, bien estructurado y fácil de mantener
-              para una mejor escalabilidad.
+              Este es un ejemplo de código limpio y bien estructurado.
             </p>
           </div>
         </div>
@@ -57,9 +38,7 @@
   </div>
 </section>
 
-<!-- TODO Estilos -->
 <style>
-  /**Cards one*/
   #cards-one {
     min-height: 90vh;
     display: flex;
@@ -74,33 +53,24 @@
 <script>
   import VanillaTilt from "vanilla-tilt";
 
-  if (
-    !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
-    // Inicializar VanillaTilt en tu tarjeta
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     VanillaTilt.init(document.getElementById("card1"), {
-      max: 10, // Máximo ángulo de inclinación
-      speed: 400, // Velocidad de la animación
-      glare: true, // Agregar efecto de reflejo
-      "max-glare": 0.3, // Intensidad del reflejo
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.3,
     });
-
-    // Inicializar VanillaTilt en tu tarjeta
     VanillaTilt.init(document.getElementById("card2"), {
-      max: 10, // Máximo ángulo de inclinación
-      speed: 400, // Velocidad de la animación
-      glare: true, // Agregar efecto de reflejo
-      "max-glare": 0.3, // Intensidad del reflejo
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.3,
     });
-
-    // Inicializar VanillaTilt en tu tarjeta
     VanillaTilt.init(document.getElementById("card3"), {
-      max: 10, // Máximo ángulo de inclinación
-      speed: 400, // Velocidad de la animación
-      glare: true, // Agregar efecto de reflejo
-      "max-glare": 0.3, // Intensidad del reflejo
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.3,
     });
   }
 </script>

@@ -7,60 +7,32 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<!--Lenguaje de la pagina-->
 <html lang="es">
-	<!-- Cabecera -->
 	<head>
-		<!-- Caracteres especiales -->
 		<meta charset="UTF-8" />
-
-		<!-- Responsivo de pantalla -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
 			href="/public/imgs/logo.png"
 			type="image/x-icon"
 		/>
-
-		<!-- Oracle CX Tag - begin -->
-
-		<script
-			type="text/javascript"
-			src="https://c.oracleinfinity.io/acs/account/e0a4074ec4a4477e0d7d61aa359ca278/js/prueba_infinity_tag/odc.js?_ora.config=recommender:test;personalization:test;analytics:test"
-		></script>
-
-		<!-- Oracle CX Tag - end -->
-
-		<!-- Font awesome -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		/>
-
-		<!-- Iconos de boxicons -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
 		/>
-
-		<!-- Nombre de la pagina -->
 		<title>Portfolio | {title}</title>
-
-		<!-- Bootstrap 5 -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
-
-		<!-- Iconos de Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
 			rel="stylesheet"
 		/>
-
-		<!-- Swiper-->
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -71,36 +43,27 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	/* Fuente Poppins*/
 	@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-	/* Variables */
 	:root {
-		/** Colores generales */
 		--azul: #8a9fa6;
 		--celeste: #d9eaea;
 		--blanco: #dadada;
 		--gris: #575757;
 		--gris-oscuro: #1f1f1f;
 		--negro: #000000;
-
-		/**Redes sociales*/
 		--whatsapp: #30d24e;
 		--facebook: #0866ff;
 		--linkedin: #0a66c2;
 		--instagram: #eb4668;
-
-		/** Color Botones */
 		--fondo-transparente: #cccccc17;
 	}
 
-	/*All*/
 	* {
 		font-family: "Poppins", sans-serif;
 		font-size: 1rem;
 	}
 
-	/* Icono de red social */
 	.icon-circle {
 		padding: 10px 15px;
 		background-color: var(--gris) !important;
@@ -108,18 +71,15 @@ const { title } = Astro.props;
 		margin-right: 20px !important;
 	}
 
-	/*Titulos*/
 	.titulo {
 		text-transform: uppercase !important;
 		color: var(--blanco) !important;
 	}
 
-	/* Enlaces */
 	a {
 		text-decoration: none !important;
 	}
 
-	/*Textos*/
 	p,
 	h1,
 	h2,
@@ -130,28 +90,24 @@ const { title } = Astro.props;
 		color: var(--blanco);
 	}
 
-	/* Estilos para párrafos */
 	p {
 		font-size: 16px;
 		line-height: 2;
 		margin-bottom: 16px;
 	}
 
-	/*Contenedor de imagen*/
 	.container-planeta {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-	/*Imagen flotante*/
 	.planeta {
 		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 		width: 80%;
 		animation: floatAnimation 3s infinite;
 	}
 
-	/*Textos azules*/
 	.azul {
 		color: var(--azul);
 	}
@@ -160,23 +116,18 @@ const { title } = Astro.props;
 		color: var(--blanco) !important;
 	}
 
-	/*TODO Enlaces*/
 	.navbar-nav .active {
 		background-color: var(--azul);
 	}
 
-	/*TODO Iconos*/
-	/*Normales*/
 	.bi {
 		margin-right: 5px;
 	}
 
-	/*Normales*/
 	.bip {
 		margin-right: 0px;
 	}
 
-	/*TODO Cards*/
 	.card {
 		background-color: var(--fondo-transparente) !important;
 		backdrop-filter: blur(10px) !important;
@@ -195,13 +146,9 @@ const { title } = Astro.props;
 
 	.glass-card-tec {
 		background-color: rgba(255, 255, 255, 0.243);
-		/* Color de fondo con transparencia */
 		backdrop-filter: blur(10px);
-		/* Aplica un efecto de desenfoque al fondo */
 		border-radius: 10px;
-		/* Redondea las esquinas de la card */
 		margin: 10px;
-
 		border: 1px solid #fff;
 
 		display: flex;
@@ -225,24 +172,18 @@ const { title } = Astro.props;
 		color: var(--blanco) !important;
 	}
 
-	/*TODO Carrusel*/
 	.item-carrusel {
 		background-color: transparent;
 	}
 
-	/*? -------------------------------------------*/
-
-	/*TODO Body*/
 	body {
 		background-color: var(--negro) !important;
 	}
 
-	/*TODO Contacto*/
 	input {
 		color: #fff !important;
 	}
 
-	/*Iconos personalizados*/
 	.bix {
 		font-size: 2rem;
 		color: var(--azul);
@@ -252,9 +193,6 @@ const { title } = Astro.props;
 		color: var(--azul);
 	}
 
-	/*TODO Media Querys*/
-
-	/* Extra small devices (phones, less than 576px) */
 	@media (max-width: 575.98px) {
 		.nombre {
 			font-size: 2rem !important;
@@ -265,7 +203,6 @@ const { title } = Astro.props;
 		}
 	}
 
-	/* Small devices (phones, 576px and up) */
 	@media (min-width: 576px) {
 		.nombre {
 			font-size: 3rem !important;
@@ -276,22 +213,12 @@ const { title } = Astro.props;
 		}
 	}
 
-	/* Medium devices (tablets, 768px and up) */
 	@media (min-width: 768px) {
 		.planeta {
 			margin-top: 50px;
 		}
 	}
 
-	/* Large devices (desktops, 992px and up) */
-	@media (min-width: 992px) {
-	}
-
-	/* Extra large devices (large desktops, 1200px and up) */
-	@media (min-width: 1200px) {
-	}
-
-	/*TODO: Animaciones*/
 	@keyframes floatAnimation {
 		0% {
 			transform: translateY(0);
@@ -306,67 +233,49 @@ const { title } = Astro.props;
 		}
 	}
 
-	/*TODO Spinner*/
-	/* Estilos para la pantalla de carga */
 	.loader-wrapper {
 		position: fixed;
 		width: 100%;
 		height: 100%;
 		background: var(--negro);
-		/* Fondo semi-transparente rojo */
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		z-index: 9999;
-		/* Capa superior para que esté por encima de otros elementos */
 		transition: opacity 0.5s;
-		/* Transición suave de la opacidad */
 		opacity: 1;
-		/* Opacidad inicial */
 	}
 
-	/* Estilos para el spinner de carga */
 	.loader {
 		border: 8px solid #f3f3f3;
-		/* Círculo exterior gris claro */
 		border-top: 8px solid var(--azul);
-		/* Círculo superior azul */
 		border-radius: 50%;
-		/* Borde redondeado para crear un círculo */
 		width: 50px;
 		height: 50px;
 		animation: spin 1s linear infinite;
-		/* Animación de rotación */
 	}
 
 	@keyframes spin {
 		0% {
 			transform: rotate(0deg);
-			/* Rotación inicial */
 		}
 
 		100% {
 			transform: rotate(360deg);
-			/* Rotación completa */
 		}
 	}
 
-	/* Ocultar la pantalla de carga después de que la página haya cargado */
 	body:not(.loaded) .loader-wrapper {
 		opacity: 1;
 	}
 
-	/* Mostrar el contenido de la página después de cargar completamente */
 	body.loaded .loader-wrapper {
 		opacity: 0;
 		pointer-events: none;
-		/* Permitir interacción con elementos debajo de la pantalla de carga */
 	}
 
-	/* Contenido de la página */
 	#content {
 		display: none;
-		/* Inicialmente oculto */
 	}
 
 	body.loaded #content {

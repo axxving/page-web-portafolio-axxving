@@ -1,35 +1,24 @@
-<!--TODO Footer -->
 <section class="container-fluid pt-5 pb-5" id="footer">
     <div class="container">
         <div class="row">
-            <!-- Primera columna con imagen, párrafo y redes sociales -->
             <div class="col-md-3 mt-3 mb-3">
-                <img
-                    width="200"
-                    class="mb-5"
-                    src="/imgs/logo-footer.png"
-                    alt="Logo"
-                />
-                <p class="">
-                    Transformo tu ideas en Sitios Web: La Innovación Conecta con
-                    tu presencia online.
+                <img width="200" class="mb-5" src="/imgs/logo-footer.png" alt="Logo" />
+                <p>
+                    Transformo tus ideas en Sitios Web: La Innovación Conecta con tu presencia online.
                 </p>
-
-                <!-- Botones de redes sociales a la derecha, ocultos en pantallas pequeñas -->
                 <div class="social-icons">
-                    <button class="btn btn-outline-secondary btn-facebook me-2"
-                        ><i class="bi bip bi-facebook"></i></button
-                    >
-                    <button class="btn btn-outline-secondary btn-linkedin me-2"
-                        ><i class="bi bip bi-linkedin"></i></button
-                    >
-                    <button class="btn btn-outline-secondary btn-instagram"
-                        ><i class="bi bip bi-instagram"></i></button
-                    >
+                    <button class="btn btn-outline-secondary btn-facebook me-2">
+                        <i class="bi bip bi-facebook"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-linkedin me-2">
+                        <i class="bi bip bi-linkedin"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-instagram">
+                        <i class="bi bip bi-instagram"></i>
+                    </button>
                 </div>
             </div>
 
-            <!-- Segunda columna con título de Servicios y enlaces -->
             <div class="col-md-3 mt-3 mb-3">
                 <h3 class="mb-4 titulo">Servicios</h3>
                 <ul class="list-unstyled">
@@ -51,7 +40,6 @@
                 </ul>
             </div>
 
-            <!-- Tercera columna con título de Enlaces Rápidos y enlaces -->
             <div class="col-md-3 mt-3 mb-3">
                 <h3 class="mb-4 titulo">Enlaces Rápidos</h3>
                 <ul class="list-unstyled">
@@ -78,9 +66,7 @@
                 <ul class="list-unstyled">
                     <li class="mb-3">
                         <i class="bi bixe bi-geo-alt"></i>
-                        <a class="footer-a" href="#direccion"
-                            >México, Puebla.</a
-                        >
+                        <a class="footer-a" href="#direccion">México, Puebla.</a>
                     </li>
                     <li class="mb-3">
                         <i class="bi bixe bi-phone"></i>
@@ -88,7 +74,7 @@
                     </li>
                     <li class="mb-3">
                         <i class="bi bixe bi-envelope"></i>
-                        <a class="footer-a" href="#correo">alex.ing.rz@gmail.com</a>
+                        <a class="footer-a" href="#correo">ejemplo@correo.com</a>
                     </li>
                 </ul>
             </div>
@@ -96,24 +82,21 @@
     </div>
 </section>
 
-<!--TODO Estilos -->
 <style>
-    /*TODO Footer*/
     #footer {
         min-height: 80vh;
         background-color: var(--gris-oscuro);
     }
 
-    /* Enlaces de footer */
     .footer-a {
         font-size: 1.1rem;
         text-decoration: none;
         transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
         color: var(--azul);
+    }
 
-        &:hover {
-            transform: scale(1.2) translateX(5px) !important;
-            color: var(--azul) !important;
-        }
+    .footer-a:hover {
+        transform: scale(1.2) translateX(5px) !important;
+        color: var(--azul) !important;
     }
 </style>

@@ -1,107 +1,67 @@
-<!--TODO Contacto -->
 <section class="container-fluid pt-5 pb-5" id="contacto">
     <div class="container text-center pb-5">
         <div class="row">
             <div class="col text-center">
-                <h6 class="azul">¡HABLEMOS!</h6>
-                <h2 class="subtitulo">
-                    ESCUCHO ATENTAMENTE TUS COMENTARIOS Y PREGUNTAS
-                </h2>
+                <h6 class="azul">Título de Ejemplo</h6>
+                <h2 class="subtitulo">Subtítulo de Ejemplo</h2>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <!-- Columna izquierda con las bolitas -->
             <div class="col-md-6">
-                <!-- Información de contacto mejorada y llamativa -->
                 <div class="d-flex flex-column align-items-start mb-4">
-                    <!-- Bolita 1 - Email -->
-                    <div
-                        class="contact-item d-flex align-items-center mb-3 rounded p-3"
-                    >
+                    <div class="contact-item d-flex align-items-center mb-3 rounded p-3">
                         <div class="icon-circle text-light">
                             <i class="bi bip bi-envelope-fill"></i>
                         </div>
                         <div>
                             <h5 class="text-primary">Email</h5>
-                            <p class="mb-0">alex.ing.rz@gmail.com</p>
+                            <p class="mb-0">ejemplo@correo.com</p>
                         </div>
                     </div>
-                    <!-- Bolita 2 - Teléfono -->
-                    <div
-                        class="contact-item d-flex align-items-center mb-3 rounded p-3"
-                    >
+                    <div class="contact-item d-flex align-items-center mb-3 rounded p-3">
                         <div class="icon-circle text-light">
                             <i class="bi bip bi-telephone-fill"></i>
                         </div>
                         <div>
                             <h5 class="text-success">Teléfono</h5>
-                            <p class="mb-0">+52 221 125 1774</p>
+                            <p class="mb-0">+123 456 7890</p>
                         </div>
                     </div>
-                    <!-- Bolita 3 - Dirección -->
-                    <div
-                        class="contact-item d-flex align-items-center rounded p-3"
-                    >
+                    <div class="contact-item d-flex align-items-center rounded p-3">
                         <div class="icon-circle text-light">
                             <i class="bi bip bi-geo-alt-fill"></i>
                         </div>
                         <div>
                             <h5 class="text-warning">Dirección</h5>
-                            <p class="mb-0">México, Puebla, #72620</p>
+                            <p class="mb-0">Dirección de Ejemplo, Ciudad, País</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Columna derecha con el formulario de contacto -->
             <div class="col-md-6">
                 <form>
-                    <!-- Formulario de contacto -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <input
-                                type="text"
-                                class="form-control glass mb-2"
-                                id="nombre"
-                                placeholder="Nombre"
-                            />
+                            <input type="text" class="form-control glass mb-2" id="nombre" placeholder="Nombre" />
                         </div>
                         <div class="col-md-6 mb-3">
-                            <input
-                                type="text"
-                                class="form-control glass mb-2"
-                                id="apellido"
-                                placeholder="Apellido"
-                            />
+                            <input type="text" class="form-control glass mb-2" id="apellido" placeholder="Apellido" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <input
-                                type="tel"
-                                class="form-control glass mb-2"
-                                id="telefono"
-                                placeholder="Teléfono"
-                            />
+                            <input type="tel" class="form-control glass mb-2" id="telefono" placeholder="Teléfono" />
                         </div>
                         <div class="col-md-6 mb-3">
-                            <input
-                                type="email"
-                                class="form-control glass mb-2"
-                                id="correo"
-                                placeholder="Correo electrónico"
-                            />
+                            <input type="email" class="form-control glass mb-2" id="correo" placeholder="Correo electrónico" />
                         </div>
                     </div>
                     <div class="mb-3">
-                        <textarea
-                            class="form-control glass"
-                            id="mensaje"
-                            rows="4"
-                            placeholder="Escribe aquí tu mensaje"></textarea>
+                        <textarea class="form-control glass" id="mensaje" rows="4" placeholder="Escribe aquí tu mensaje"></textarea>
                     </div>
                     <button type="submit" class="btn btn-outline-secondary">Enviar</button>
                 </form>
@@ -110,7 +70,6 @@
     </div>
 </section>
 
-<!--TODO Estilos -->
 <style>
     #contacto {
         min-height: 100vh;
@@ -120,7 +79,6 @@
         flex-direction: column;
     }
 
-    /* Estilos para los inputs con efecto glass */
     .glass {
         background-color: var(--fondo-transparente);
         color: var(--blanco) !important;
@@ -130,26 +88,19 @@
 
     .form-control:focus {
         border-color: rgb(163, 163, 163);
-        /* Cambia el color del contorno al hacer clic */
         box-shadow: 0 0 0 0.25rem rgba(150, 150, 150, 0.466);
-        /* Cambia la sombra al hacer clic */
     }
 
     .glass:focus {
         outline: none;
         background-color: rgba(255, 255, 255, 0.4);
-        /* Cambio de color al enfocar */
     }
 
-    /* Estilos para los placeholders */
     .glass::placeholder {
         color: rgba(255, 255, 255, 0.7);
-        /* Color del placeholder */
     }
 
-    /* Estilos para los placeholders al enfocar */
     .glass:focus::placeholder {
         color: rgba(255, 255, 255, 0.9);
-        /* Cambio de color del placeholder al enfocar */
     }
 </style>

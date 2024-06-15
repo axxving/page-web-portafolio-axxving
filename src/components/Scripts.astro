@@ -1,98 +1,85 @@
 <script>
-    // Importando scroll reveal
     import ScrollReveal from "scrollreveal";
-
-    // Importando bootstrap 5
     import "bootstrap/dist/css/bootstrap.min.css";
     import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-    // Inicializar ScrollReveal
     const sr = ScrollReveal({
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        duration: 2000, // Duración de la animación
-        delay: 300, // Retraso antes de la animación
+        origin: "bottom",
+        distance: "20px",
+        duration: 2000,
+        delay: 300,
     });
 
-    // Revelar elementos del hero
     sr.reveal("#hero .container-texto-hero", {
-        origin: "left", // Desde la izquierda
+        origin: "left",
     });
     sr.reveal("#hero .container-planeta", {
-        origin: "right", // Desde la derecha
+        origin: "right",
     });
 
-    // Revelar elementos de la sección "Cards"
     sr.reveal("#cards-one .card", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre la animación de cada tarjeta
+        origin: "bottom",
+        distance: "20px",
+        interval: 200,
     });
 
-    // Revelar elementos de la sección "Mi Bio"
     sr.reveal("#sobre .contenedor-texto-sobre", {
-        origin: "left", // Desde la izquierda
-        distance: "20px", // Distancia de revelación
+        origin: "left",
+        distance: "20px",
     });
     sr.reveal("#sobre img", {
-        origin: "right", // Desde la derecha
-        distance: "20px", // Distancia de revelación
+        origin: "right",
+        distance: "20px",
     });
 
-    // Revelar elementos de la sección "Servicios"
     sr.reveal("#servicios .card", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre la animación de cada tarjeta
+        origin: "bottom",
+        distance: "20px",
+        interval: 200,
     });
 
-    // Revelar elementos de la sección "Proyectos"
     sr.reveal("#proyectos .tab-content", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
+        origin: "bottom",
+        distance: "20px",
     });
 
-    // Revelar elementos de la sección "Blog"
     sr.reveal("#blog .card", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre cada elemento
+        origin: "bottom",
+        distance: "20px",
+        interval: 200,
     });
 
-    // Revelar elementos de la sección "Contacto"
     sr.reveal("#contacto .col-md-6", {
-        origin: "left", // Desde la izquierda
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre cada elemento
+        origin: "left",
+        distance: "20px",
+        interval: 200,
     });
     sr.reveal("#contacto form", {
-        origin: "right", // Desde la derecha
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre cada elemento
+        origin: "right",
+        distance: "20px",
+        interval: 200,
     });
 
-    // Revelar elementos de la sección "News"
     sr.reveal("#news h6", {
-        origin: "left", // Desde la izquierda
-        distance: "20px", // Distancia de revelación
+        origin: "left",
+        distance: "20px",
     });
     sr.reveal("#news h2", {
-        origin: "bottom", // Desde abajo
-        distance: "20px", // Distancia de revelación
+        origin: "bottom",
+        distance: "20px",
     });
     sr.reveal("#news h6:last-of-type", {
-        origin: "right", // Desde la derecha
-        distance: "20px", // Distancia de revelación
+        origin: "right",
+        distance: "20px",
     });
     sr.reveal("#news .content-input", {
-        origin: "bottom", // Desde abajo
-        distance: "20px", // Distancia de revelación
+        origin: "bottom",
+        distance: "20px",
     });
 
-    // Revelar elementos de la sección "Footer"
     sr.reveal("#footer .col-md-3", {
-        origin: "bottom", // Desde abajo
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre cada columna
+        origin: "bottom",
+        distance: "20px",
+        interval: 200,
     });
 </script>

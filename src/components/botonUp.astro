@@ -1,11 +1,8 @@
-<!--TODO Boton UP-->
 <a href="#hero" class="btn-up" id="boton-up">
   <i class="bi bi-arrow-up"></i>
 </a>
 
-<!--TODO Estilos -->
 <style>
-  /*TODO Botones*/
   .btn-up {
     background-color: var(--fondo-transparente);
     backdrop-filter: blur(10px);
@@ -27,9 +24,7 @@
   }
 </style>
 
-<!--TODO Script -->
 <script>
-  // Boton UP
   document.addEventListener("DOMContentLoaded", function () {
     const btnUp = document.getElementById("boton-up");
 
@@ -37,9 +32,9 @@
       const scrollY = window.scrollY || window.pageYOffset;
 
       if (scrollY >= 200) {
-        btnUp.style.bottom = "15px"; // Ajusta la posición según tus necesidades
+        btnUp.style.bottom = "15px";
       } else {
-        btnUp.style.bottom = "-100px"; // Oculta el botón fuera de la pantalla
+        btnUp.style.bottom = "-100px";
       }
     });
   });
